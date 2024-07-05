@@ -1,0 +1,990 @@
+  {/* <div className="job-card-container">
+        {data.map((job, index) => (
+          <div className="job-card" key={index}>
+            <div className="job-details">
+              <Link className="jobList_link" to="/main/jobViewing">
+                {" "}
+                <h2 className="jobList_roll">{job.Roll}</h2>{" "}
+              </Link>
+              <div className="jobList_comp">
+                <Link className="jobList_link" to="/main/jobViewing">
+                  {" "}
+                  <p className="jobList_compname"> {job.companyname}</p>
+                </Link>
+                <p className="jobList_para1">
+                  {" "}
+                  <StarIcon
+                    sx={{
+                      width: "24px",
+                      height: "24px",
+                      color: "yellow",
+                      marginTop: "-5px",
+                    }}
+                  />
+                  {job.rating}
+                </p>
+                <p className="jobList_para1"> {job.reviews}</p>
+              </div>
+              <div className="job-metadata">
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "row",
+                    alignItems: "center",
+                    marginBottom: "10px",
+                  }}
+                >
+                  <img
+                    src={Post1}
+                    alt={job.Roll}
+                    style={{ width: "22px", height: "22px" }}
+                  />
+                  <p className="jobList_para1">{job.location}</p>
+                  <div
+                    style={{
+                      width: "80px",
+                      height: "24px",
+                      borderWidth: "1px",
+                      borderStyle: "solid",
+                      borderRadius: "10px",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      marginLeft: "10px",
+                      borderColor: "#EFF5FC",
+                    }}
+                  >
+                    <p style={{ fontSize: "14px", fontWeight: "400" }}>
+                      {job.time}
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "row",
+                    alignItems: "center",
+                    marginBottom: "10px",
+                  }}
+                >
+                  <Link to="/main/jobViewing">
+                    <img
+                      src={Post2}
+                      alt={job.Roll}
+                      style={{ width: "22px", height: "22px" }}
+                    />
+                  </Link>
+                  <p className="jobList_para1">{job.Experience}</p>
+                  <img
+                    src={Post3}
+                    alt={job.Roll}
+                    style={{
+                      width: "22px",
+                      height: "22px",
+                      marginLeft: "25px",
+                    }}
+                  />
+                  <p
+                    style={{
+                      fontSize: "14px",
+                      fontWeight: "400",
+                      marginLeft: "5px",
+                    }}
+                  >
+                    {" "}
+                    {job.package}
+                  </p>
+                </div>
+
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "row",
+                    alignItems: "center",
+                  }}
+                >
+                  <img
+                    src={Post4}
+                    alt={job.Roll}
+                    style={{
+                      width: "22px",
+                      height: "22px",
+                      marginRight: "10px",
+                    }}
+                  />
+
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "row",
+                      alignItems: "center",
+                      justifyContent: "space-evenly",
+                    }}
+                  >
+                    {Object.values(job.skill).map((skill, idx) => (
+                      <Link
+                        style={{ color: "#fff", textDecoration: "none" }}
+                        to="/main/jobViewing"
+                      >
+                        {" "}
+                        <div
+                          style={{
+                            width: "131px",
+                            height: "30px",
+                            borderWidth: "1px",
+                            borderStyle: "solid",
+                            borderRadius: "10px",
+                            display: "flex",
+                            borderColor: "#EFF5FC",
+                            alignItems: "center",
+                            justifyContent: "center",
+                            marginRight: "20px",
+                            backgroundColor: "#EFF5FC",
+                          }}
+                        >
+                          {" "}
+                          <p
+                            style={{
+                              fontSize: "14px",
+                              fontWeight: "400",
+                              color: "#4A4A4A",
+                            }}
+                            key={idx}
+                          >
+                            {skill}
+                          </p>
+                        </div>
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+                <div
+                  style={{
+                    width: "820px",
+                    height: "1px",
+                    backgroundColor: "#E6E6E6",
+                    marginTop: "20px",
+                  }}
+                ></div>
+
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "row",
+                    alignItems: "center",
+                    marginTop: "5px",
+                  }}
+                >
+                  <AccessTimeIcon
+                    sx={{ width: "22px", height: "22px", color: "#2196F3" }}
+                  />
+                  <p
+                    style={{
+                      fontSize: "14px",
+                      color: "#8B8B8B",
+                      marginLeft: "10px",
+                    }}
+                  >
+                    Posted on 20 Dec, 2023{" "}
+                  </p>
+                  <p
+                    style={{
+                      fontSize: "14px",
+                      color: "#8B8B8B",
+                      position: "relative",
+                      left: "665px",
+                    }}
+                  >
+                    <TurnedInNotIcon
+                      sx={{ width: "24px", height: "24px", color: "#2196F3" }}
+                    />
+                    Save
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <img
+              src={job.image}
+              alt={job.Roll}
+              style={{
+                width: "86px",
+                height: "86px",
+                left: "-20px",
+                position: "relative",
+                top: "20px",
+              }}
+            />
+          </div>
+        ))}
+      </div>
+      
+      <div className="cardmain">
+        <div className="main_cont">
+          <div className="main_sub">
+            <p className="job_para">Software Developer</p>
+            <div className="main_subpart">
+              <p className="job_abc">ABC Solutions </p>
+              <div className="job_subpart1">
+                <img src={jS} alt="" />
+                <span className="job_star">4.2</span>
+                <span className="job_review">4100 Reviews</span>
+              </div>
+            </div>
+            <div className="main_subpart1">
+              <div className="job_submain">
+                <img className="job_location" src={Post1} alt="" />
+                <span className="job_chn">Chennai</span>
+              </div>
+              <p className="job_time">Full Time</p>
+            </div>
+          </div>
+          <div className="main_sub1">
+            <img className="job_vsimg" src={Post5} alt="" />
+          </div>
+        </div>
+        <div className="main_subpart1 main_subpart11">
+          <div className="job_submain">
+            <img className="job_location" src={Post2} alt="" />
+            <span className="job_chn">3-5 yrs</span>
+          </div>
+          <div className="job_submain">
+            <img className="job_location" src={Post3} alt="" />
+            <span className="job_chn">4,00,000 - 5,00,000 INR</span>
+          </div>
+        </div>
+        <div className="main_subpart1 job_subskill">
+          <div className="job_submain job_submain11">
+            <img className="job_location job_hum" src={Post4} alt="" />
+            <p className="job_skill">HTML</p>
+            <p className="job_skill">CSS </p>
+            <p className="job_skill">JavaScript</p>
+            <p className="job_skill">Reactjs</p>
+            <p className="job_skill">CoreJava</p>
+            <p className="job_skill">jQuery</p>
+            <p className="job_skill">Wordpress</p>
+          </div>
+          
+        </div>
+        <div className="main_subpart1 main_subpart11 main_subpost">
+          <div className="job_submain">
+            <img className="job_location job_timeicon" src={tp} alt="" />
+            <span className="job_chn job_days">Posted an hour ago</span>
+          </div>
+          <div className="job_submain">
+            <img className="job_location job_timeicon" src={SaveIcon} alt="" />
+            <span className="job_chn job_save">Save</span>
+          </div>
+        </div>
+      </div> */}
+
+
+
+      // routes
+
+
+      {/* <Route path="/ap" element={<DynamicInputFields />} /> */}
+            {/* <Route path="/main/jobs" element={<Job />} /> */}
+            {/* <Route path="/main/ContactUs" element={<ContactUs />} /> */}
+            {/* <Route path="/main/About" element={<About />} /> */}
+            {/* <Route path="/main/Terms" element={<TermsPolicy />} /> */}
+            {/* <Route path="/main/vehicle" element={<Vehicle />} /> */}
+            {/* <Route path="/main/demo" element={<Demo />} /> */}
+            {/* <Route path="/main/form" element={<MyForm />} /> */}
+            {/* <Route path="/main/form1" element={<PropertyDetailFormPage />} /> */}
+
+
+// remaining files
+import AddCircleIcon from "@mui/icons-material/AddCircle";
+import CancelIcon from "@mui/icons-material/Cancel";
+
+import React, { useState } from "react";
+import { useEffect } from "react";
+import {
+  UpdateDetails,
+  AddDetails,
+  FetchDetails,
+} from "../../routes/profileRoutes";
+import Jobusestates from "../../useStates/JobUsestate";
+import { useSelector } from "react-redux";
+import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
+import Modal from "@mui/material/Modal";
+import { Toast } from "primereact/toast";
+import { useRef } from "react";
+import {
+  allDegrees,
+  Specializations,
+  allUniversities,
+  schoolQualificationList,
+  academicDisciplines,
+} from "../../Data/JobJson";
+import { style } from "../../Styles/Jobformstyle";
+
+function CollageForm() {
+  const [tableData, setTableData] = useState([
+    // Initial table data
+    {
+      id: 1,
+      clg_course: "",
+      clg_specialization: "",
+      start_year: "",
+      end_year: "",
+      university: "",
+      collage: "",
+      clg_percentage: "",
+    },
+  ]);
+
+console.log('collage details',tableData);
+
+
+  const handleAddInputField = () => {
+    // Add a new row with empty input fields
+    setTableData((prevData) => [
+      ...prevData,
+      {
+        id: prevData.length + 1,
+        clg_course: "",
+        clg_specialization: "",
+        start_year: "",
+        end_year: "",
+        university: "",
+        collage: "",
+        clg_percentage: "",
+      },
+    ]);
+  };
+
+  const handleRemoveRow = (index) => {
+    // Remove the row at the specified index
+    setTableData((prevData) => prevData.filter((row, i) => i !== index));
+  };
+
+  const handleInputChange = (index, fieldName, value) => {
+    // Update the value of the input field in the specified row
+    setTableData((prevData) =>
+      prevData.map((row, i) =>
+        i === index ? { ...row, [fieldName]: value } : row
+      )
+    );
+  };
+
+  const authdata = useSelector((state) => state.auth.user?.user.user);
+
+  const [Education, setEducation] = React.useState(false);
+  const handleEducationOpen = () => setEducation(true);
+  const handleEducationClose = () => setEducation(false);
+
+  const {
+    EducationalDetails,
+    setEducationalDetails,
+    EducationalDetailsForm,
+    setEducationalDetailsForm,
+  } = Jobusestates();
+
+  const [validStartYear, setValidStartYear] = useState("");
+  const [validEndYear, setValidEndYear] = useState("");
+  const [validSclStart, setValidSclStart] = useState("");
+  const [validSclEnd, setValidSclEnd] = useState("");
+
+  const toast = useRef(null);
+
+  const handleEducationalDetails = (e) => {
+    const { name, value } = e.target;
+    setEducationalDetailsForm({
+      ...EducationalDetailsForm,
+      [name]: value,
+      userid: authdata?.id,
+    });
+
+    const isValidYear = /^\d{4}$/.test(value);
+
+    if (name.trim() === "start_year") {
+      isValidYear
+        ? setValidStartYear("")
+        : setValidStartYear("Please enter a valid four-digit year.");
+    } else if (name.trim() === "end_year") {
+      isValidYear
+        ? setValidEndYear("")
+        : setValidEndYear("Please enter a valid four-digit year.");
+    } else if (name.trim() === "scl_start") {
+      isValidYear
+        ? setValidSclStart("")
+        : setValidSclStart("Please enter a valid four-digit year.");
+    } else if (name.trim() === "scl_end") {
+      isValidYear
+        ? setValidSclEnd("")
+        : setValidSclEnd("Please enter a valid four-digit year.");
+    }
+  };
+
+  const educational_edutvalue = async (e, table) => {
+    e.preventDefault();
+    const fetchDetails = await FetchDetails(authdata?.id, table);
+
+    if (fetchDetails) {
+      setEducationalDetailsForm(fetchDetails);
+    } else {
+      setEducationalDetailsForm(null);
+    }
+  };
+
+  useEffect(() => {
+    const fetchEducationalInformation = async () => {
+      const fetchEducationalDetails = await FetchDetails(
+        authdata?.id,
+        "EducationalDetails"
+      );
+      setEducationalDetails(fetchEducationalDetails);
+    };
+
+    fetchEducationalInformation();
+  }, []);
+
+  const HandleAddEducationDetails = async (e) => {
+    e.preventDefault();
+
+    const action = e.nativeEvent.submitter.value;
+
+    if (action.trim() == "update") {
+      const educationalUpdatedetails = {
+        insertdata: EducationalDetailsForm,
+        table: "EducationalDetails",
+        insertMessage: "Educational Details Updated Successfully",
+      };
+      const EducationalDetails = await UpdateDetails(educationalUpdatedetails);
+      if (EducationalDetails) {
+        setEducation(false);
+        setEducationalDetails(EducationalDetails.data.data.response[0]);
+        toast.current.show({
+          severity: "success",
+          summary: "Success",
+          detail: EducationalDetails.data.data.message,
+          life: 3000,
+        });
+      } else {
+        toast.current.show({
+          severity: "success",
+          summary: "Success",
+          detail: EducationalDetails.data.data.message,
+          life: 3000,
+        });
+      }
+    } else {
+      const educationaldetails = {
+        insertdata: EducationalDetailsForm,
+        table: "EducationalDetails",
+        insertMessage: "Educational Details Inserted Successfully",
+      };
+      const addEducationaldetailsdata = await AddDetails(educationaldetails);
+
+      if (addEducationaldetailsdata) {
+        setEducation(false);
+        setEducationalDetails(addEducationaldetailsdata.data.data.response);
+        toast.current.show({
+          severity: "success",
+          summary: "Success",
+          detail: addEducationaldetailsdata.data.data.message,
+          life: 3000,
+        });
+      } else {
+        toast.current.show({
+          severity: "success",
+          summary: "Success",
+          detail: addEducationaldetailsdata,
+          life: 3000,
+        });
+      }
+    }
+  };
+
+  const [educationDetails, setEducationDetails] = useState([
+    {
+      highestQualification: true,
+      course: "",
+      specialization: "",
+      year: "",
+      university: "",
+    },
+  ]);
+
+  return (
+    <div style={{
+      marginTop:"20px"
+    }}>
+      <table>
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>Select Course</th>
+            <th>Select Specialization</th>
+            <th>Start Year</th>
+            <th>End Year</th>
+            <th style={{
+                width:"16%"
+            }}>Select University</th>
+            <th>Enter College Name</th>
+            <th>Enter Collage Percentage</th>
+            <th>
+              <AddCircleIcon
+                onClick={handleAddInputField}
+                style={{
+                  backgroundColor: "green",
+                  color: "white",
+                }}
+              />
+            </th>{" "}
+            {/* Add Action column */}
+          </tr>
+        </thead>
+        <tbody>
+          {tableData.map((row, index) => (
+            <tr key={row.id}>
+              <td>{row.id}</td>
+              <td>
+                <select
+                  className="form-control"
+                
+                  name="clg_course"
+                  id="clg_course"
+                  onChange={(e) =>
+                    handleInputChange(index, "clg_course", e.target.value)
+                  }
+                >
+                  <option value="">Select Degree</option>
+                  {allDegrees.map((degree, index) => (
+                    <option
+                     
+                      key={index}
+                      value={degree}
+                    >
+                      {degree}
+                    </option>
+                  ))}
+                </select>
+              </td>
+              <td>
+                <select
+                  className="form-control"
+                  onChange={(e) =>
+                    handleInputChange(index, "clg_specialization", e.target.value)
+                  }
+                  name="clg_specialization"
+                  id="clg_specialization"
+                >
+                  <option value="">Select Specialization</option>
+                  {Specializations.map((course, index) => (
+                    <option
+                      
+                      key={index}
+                      value={course}
+                    >
+                      {course}
+                    </option>
+                  ))}
+                </select>
+              </td>
+              <td>
+                <input
+                  type="number"
+                  className="form-control"
+                  placeholder="start year"
+                  name="start_year"
+                  id="start_year"
+                  onChange={(e) =>
+                    handleInputChange(index, "start_year", e.target.value)
+                  }
+                />
+              </td>
+
+              <td>
+                <input
+                  type="number"
+                  className="form-control"
+                  placeholder="end year"
+                  name="end_year"
+                  id="end_year"
+                  onChange={(e) =>
+                    handleInputChange(index, "end_year", e.target.value)
+                  }
+                />
+              </td>
+
+              <td>
+                <select
+                  className="form-control"
+                  onChange={(e) =>
+                    handleInputChange(index, "university", e.target.value)
+                  }
+                  name="university"
+                  id="university"
+                >
+                  <option value="">Select University</option>
+                  {allUniversities.map((university, index) => (
+                    <option
+                     
+                      key={index}
+                      value={university}
+                    >
+                      {university}
+                    </option>
+                  ))}
+                </select>
+              </td>
+
+              <td>
+                <input
+                  type="text"
+                  className="form-control"
+                  name="collage"
+                  id="collage"
+                  onChange={(e) =>
+                    handleInputChange(index, "collage", e.target.value)
+                  }
+                />
+              </td>
+
+              <td>
+                <input
+                  type="text"
+                  className="form-control"
+                  name="clg_percentage"
+                  id="clg_percentage"
+                  onChange={(e) =>
+                    handleInputChange(index, "collage", e.target.value)
+                  }
+                />
+              </td>
+              <td>
+                <CancelIcon
+                  style={{ backgroundColor: "red", color: "white" }}
+                  onClick={() => handleRemoveRow(index)}
+                />
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+}
+
+export default CollageForm;
+
+//SCHOOL form
+import AddCircleIcon from "@mui/icons-material/AddCircle";
+import CancelIcon from "@mui/icons-material/Cancel";
+
+import React, { useState } from "react";
+import { useEffect } from "react";
+import {
+  UpdateDetails,
+  AddDetails,
+  FetchDetails,
+} from "../../routes/profileRoutes";
+import Jobusestates from "../../useStates/JobUsestate";
+import { useSelector } from "react-redux";
+import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
+import Modal from "@mui/material/Modal";
+import { Toast } from "primereact/toast";
+import { useRef } from "react";
+import {
+  allDegrees,
+  Specializations,
+  allUniversities,
+  schoolQualificationList,
+  academicDisciplines,
+} from "../../Data/JobJson";
+import { style } from "../../Styles/Jobformstyle";
+import axios from "axios";
+import { Nodeapi } from "../../config/serverUrl";
+
+
+function SchoolForm() {
+  const [tableData, setTableData] = useState([
+    // Initial table data
+    {
+      id: 1,
+      scl_qualification: "",
+      scl_specialization: "",
+      scl_start: "",
+      scl_end: "",
+      scl_name: "",
+      scl_percentage: "",
+    },
+  ]);
+
+    console.log('school details',tableData);
+
+
+  const handleAddInputField = () => {
+    // Add a new row with empty input fields
+    setTableData((prevData) => [
+      ...prevData,
+      { id: prevData.length + 1, scl_qualification: "",
+      scl_specialization: "",
+      scl_start: "",
+      scl_end: "",
+      scl_name: "",
+      scl_percentage: "", },
+    ]);
+  };
+
+  const handleRemoveRow = (index) => {
+    // Remove the row at the specified index
+    setTableData((prevData) => prevData.filter((row, i) => i !== index));
+  };
+
+  const handleInputChange = (index, fieldName, value) => {
+    // Update the value of the input field in the specified row
+    setTableData((prevData) =>
+      prevData.map((row, i) =>
+        i === index ? { ...row, [fieldName]: value } : row
+      )
+    );
+  };
+
+
+  const handleSchool = async() => {
+    try {
+      const res = axios.post(`${Nodeapi}/`)
+    } catch (error) {
+      
+    }
+  }
+
+  return (
+    <div style={{
+      marginTop:"20px"
+    }}>
+      <table>
+        <thead style={{
+          border:"1 px solid black"
+        }}>
+          <tr>
+            <th>Id</th>
+            <th>Qualification</th>
+            <th>Specialization</th>
+            <th>Start Year</th>
+            <th>End Year</th>
+            <th>Enter School Name</th>
+            <th>Enter School Percentage</th>
+            <th>
+              <AddCircleIcon
+                onClick={handleAddInputField}
+                style={{
+                  backgroundColor: "green",
+                  color: "white",
+                }}
+              />
+            </th>{" "}
+            {/* Add Action column */}
+          </tr>
+        </thead>
+        <tbody>
+          {tableData.map((row, index) => (
+            <tr key={row.id}>
+              <td>{row.id}</td>
+              <td>
+                <select
+                  className="form-select"
+                  name="scl_qualification"
+                  id="scl_qualification"
+                  onChange={(e) =>
+                    handleInputChange(index, "scl_qualification", e.target.value)
+                  }
+                >
+                  <option value="">Select School Qualification</option>
+                  {schoolQualificationList.map((qualification, index) => (
+                    <option key={index} value={qualification}>
+                      {qualification}
+                    </option>
+                  ))}
+                </select>
+              </td>
+              <td>
+                <select
+                  className="form-select"
+                  name="scl_specialization"
+                  id="scl_specialization"
+                  onChange={(e) =>
+                    handleInputChange(index, "scl_specialization", e.target.value)
+                  }
+                >
+                  <option value="">Select Specialization</option>
+                  {academicDisciplines.map((discipline, index) => (
+                    <option key={index} value={discipline}>
+                      {discipline}
+                    </option>
+                  ))}
+                </select>
+              </td>
+
+              <td>
+                <input
+                  type="text"
+                  className="form-control"
+                  placeholder="Enter Start Year"
+                  name="scl_start"
+                  id="scl_start"
+                  onChange={(e) =>
+                    handleInputChange(index, "scl_start", e.target.value)
+                  }
+                />
+              </td>
+              <td>
+                <input
+                  type="text"
+                  className="form-control"
+                  placeholder="Enter End Year"
+                  name="scl_end"
+                  id="scl_end"
+                  onChange={(e) =>
+                    handleInputChange(index, "scl_end", e.target.value)
+                  }
+                />
+              </td>
+              <td>
+                <input
+                  type="text"
+                  className="form-control"
+                  name="scl_name"
+                  id="scl_name"
+                  onChange={(e) =>
+                    handleInputChange(index, "scl_name", e.target.value)
+                  }
+                />
+              </td>
+              <td>
+                <input
+                  type="text"
+                  className="form-control"
+                  name="scl_percentage"
+                  id="scl_percentage"
+                  onChange={(e) =>
+                    handleInputChange(index, "scl_percentage", e.target.value)
+                  }
+                />
+              </td>
+              <td>
+                <CancelIcon
+                  style={{ backgroundColor: "red", color: "white" }}
+                  onClick={() => handleRemoveRow(index)}
+                />
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+}
+
+export default SchoolForm;
+
+//HOME Button
+import React from "react";
+import {
+  ArrowCircleDown,
+  ArrowCircleLeft,
+  ArrowCircleRight,
+  ArrowCircleUp,
+  House,
+} from "@phosphor-icons/react";
+
+const Hbutton = () => {
+  const handleScroll = (direction) => {
+    const scrollAmount = 500; // Adjust the scroll amount as needed
+
+    if (direction === "down") {
+      window.scrollBy(0, scrollAmount);
+    } else if (direction === "up") {
+      window.scrollBy(0, -scrollAmount);
+    }
+  };
+
+  return (
+    <div
+      className="Home"
+      style={{
+        position: "fixed",
+        right: "6rem",
+        backgroundColor: "white",
+        borderRadius: "50%",
+        padding: "2px",
+        top: "40rem",
+        // border: "2px solid #1877F2",
+      }}
+    >
+      <div className="home-menu" style={{ position: "relative" }}>
+        <House size={25} color="#1877F2" weight="fill" />
+        <ArrowCircleLeft
+          size={32}
+          color="#1877F2"
+          style={{
+            position: "absolute",
+            top: "0",
+            left: "-45px",
+            "&:hover": {
+              backgroundColor: "#1877F2",
+              color: "white",
+            },
+          }}
+          className="home-icon"
+        />
+        <ArrowCircleRight
+          size={32}
+          color="#1877F2"
+          style={{
+            position: "absolute",
+            top: "0",
+            left: "45px",
+            "&:hover": {
+              backgroundColor: "#1877F2",
+              color: "white",
+            },
+          }}
+          className="home-icon"
+        />
+        <ArrowCircleUp
+          size={32}
+          color="#1877F2"
+          style={{
+            position: "absolute",
+            top: "-45px",
+            left: "-5",
+            "&:hover": {
+              backgroundColor: "#1877F2",
+              color: "white",
+              cursor: "pointer",
+            },
+          }}
+          className="home-icon"
+          onClick={() => handleScroll("down")}
+        />
+        <ArrowCircleDown
+          size={32}
+          color="#1877F2"
+          style={{
+            position: "absolute",
+            top: "45px",
+            left: "-2",
+            "&:hover": {
+              backgroundColor: "#1877F2",
+              color: "white",
+              cursor: "pointer",
+            },
+          }}
+          className="home-icon"
+          onClick={() => handleScroll("down")}
+        />
+      </div>
+    </div>
+  );
+};
+
+export default Hbutton;
+

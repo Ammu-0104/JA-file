@@ -1,0 +1,388 @@
+.myActive {
+  background-color: #fafafa;
+}
+.css-hip9hq-MuiPaper-root-MuiAppBar-root {
+  background-color: #ffffff !important;
+}
+/* .css-heg063-MuiTabs-flexContainer {
+  gap: 52px !important;
+} */
+.css-heg063-MuiTabs-flexContainer {
+  display: flex !important;
+  /* justify-content: space-between; */
+  align-items: center !important;
+}
+.activeTab {
+  font-size: 18px !important;
+  font-weight: 500 !important;
+  line-height: 21.6px !important;
+  color: #8b8b8b !important;
+  text-transform: capitalize !important;
+}
+.active_tabCont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 175px !important;
+  gap: 12px;
+}
+.css-1h9z7r5-MuiButtonBase-root-MuiTab-root {
+  padding: 0 !important;
+}
+.active_tabCont img:hover {
+  filter: brightness(0) invert(0.7) sepia(1) saturate(5) hue-rotate(175deg);
+}
+
+.activeTab.Mui-selected .active_tabCont img {
+  filter: brightness(0) invert(0.7) sepia(1) saturate(5) hue-rotate(175deg);
+}
+.activeTab.Mui-selected .active_tabCont {
+  color: #2196f3 !important;
+}
+
+/* .activeTab :hover {
+  background-color: #eff5fc !important;
+  color: #2196f3 !important;
+} */
+.css-hip9hq-MuiPaper-root-MuiAppBar-root {
+  box-shadow: none !important;
+}
+.activeCont {
+  padding: 0 70px 38px 150px;
+  margin: 0;
+}
+.css-16cqd0p-MuiPaper-root-MuiCard-root {
+  margin: 0 !important;
+}
+.css-1h9z7r5-MuiButtonBase-root-MuiTab-root:hover {
+  background-color: #eff5fc !important;
+  color: #2196f3 !important;
+}
+.css-46bh2p-MuiCardContent-root:last-child {
+  padding: 24px !important;
+}
+.activeHeading {
+  font-size: 16px !important;
+  font-weight: 500 !important;
+  line-height: 19.2px !important;
+  color: #4a4a4a !important;
+  /* padding-bottom: 24px !important; */
+}
+.css-19kzrtu {
+  padding: 0 !important;
+}
+.css-46bh2p-MuiCardContent-root {
+  padding: 0 !important;
+}
+.active_appBar {
+  padding-bottom: 32px !important;
+}
+.active_today {
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  line-height: 18px !important;
+  color: #8b8b8b !important;
+  padding-bottom: 16px !important;
+}
+.css-1aquho2-MuiTabs-indicator {
+  background-color: #2196f3 !important;
+  height: 4px !important;
+}
+.active_cardCont {
+  padding: 12px;
+  /* width: 400px; */
+  display: flex;
+  gap: 12px;
+}
+.act_inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 6px;
+}
+.act_close {
+  align-self: flex-end;
+}
+.act_cardHead {
+  font-size: 13px !important;
+  font-weight: 500 !important;
+  line-height: 16.8px !important;
+  color: #2196f3 !important;
+  text-align: center !important;
+  width: auto !important;
+}
+.act_CardSub {
+  background-color: #eff5fc;
+  /* padding: 6px 12px; */
+  width: 129px;
+}
+.act_catgy {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+  color: #bbb9b9;
+}
+.act_title {
+  color: #2824df;
+  padding-right: 6px;
+  border-right: 0.8px solid #e6e6e6;
+}
+.act_lising {
+  border-radius: 5px;
+  padding: 4px 5px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  text-align: left;
+  color: #9554ff;
+  background-color: #f0e2f7;
+}
+.act_part1 {
+  display: flex;
+  gap: 11px;
+}
+.act_contPart {
+  display: flex;
+  gap: 50px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-bottom: 8px;
+}
+.actContPart02 {
+  gap: 35px;
+}
+.act_dsg {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+  color: #4a4a4a;
+  padding-bottom: 8px;
+}
+.act_loc {
+  padding-right: 8px;
+  border-right: 1px solid #e6e6e6;
+}
+.act_part2 {
+  display: flex;
+  gap: 8px;
+  padding-bottom: 8px;
+}
+.act_salary {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  color: #4a4a4a;
+  padding-bottom: 8px;
+}
+.act_contPart2 {
+  /* padding-bottom: 8px; */
+  border-bottom: 0.4px solid #e6e6e6;
+  margin-bottom: 6px;
+}
+.adrs {
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 12px;
+  color: #8b8b8b;
+}
+.act_part3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.act_partSub {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+.act_parentCont {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 34px;
+}
+.header_content {
+  width: 558px;
+  height: 80px;
+  top: 11px;
+  left: 1px;
+  border-radius: 10px 10px 0 0;
+  border: 0.19px solid #bbb9b9;
+  background-color: #2196f3;
+  align-self: flex-start;
+}
+.header_navTab {
+  height: 108px;
+}
+
+.header_list {
+  padding: 0 20px;
+  color: white;
+}
+
+.header_list1 {
+  border-bottom: 1px solid white;
+  padding: 0 10px;
+  color: white;
+}
+.search-container {
+  padding: 8px, 15px, 8px, 139px;
+  border-radius: 100px;
+  border: 1.19px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.search-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 84px;
+  height: 34px;
+  top: 8px;
+  left: 460px;
+  padding: 4px 11px 4px 11px;
+  border-radius: 119.38px;
+  border: 1.19px;
+  background-color: #2196f3;
+  color: #ffffff;
+}
+
+.head_subPart {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-right: 1px solid #bbb9b9;
+}
+
+.header_container {
+  height: 140px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-items: center;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  border-bottom: 2px solid white;
+  border-radius: 10px 10px 0 0;
+  background-color: #2196f3 !important;
+  margin-left: 8px;
+}
+.nav-link {
+  color: white !important;
+}
+.head_btn {
+  padding: 8px 20px 8px 20px;
+  border-radius: 100px;
+  gap: 8px;
+  background: #2196f3;
+  border: #2196f3;
+  color: white;
+}
+.actLst1 {
+  color: #17a2b8;
+  background-color: #ebf5f7;
+}
+.adrsBlue {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: left;
+  color: #2196f3;
+}
+.actReject {
+  gap: 27px;
+  display: flex;
+  align-items: center;
+  padding-bottom: 5px;
+  justify-content: flex-start;
+}
+.actLst2 {
+  color: #ff3b3c;
+  background-color: #f8ebeb;
+}
+.css-bhp9pd-MuiPaper-root-MuiCard-root {
+  border-radius: 8px !important;
+  border: 1px solid #e6e6e6 !important;
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .desktop-only {
+    display: none;
+  }
+  .mobile-only {
+    display: block;
+  }
+  .css-hip9hq-MuiPaper-root-MuiAppBar-root,
+  .css-1ujnqem-MuiTabs-root {
+    width: 100% !important;
+  }
+}
+
+@media (min-width: 301px) and (max-width: 480px) {
+  .desktop-only {
+    display: none;
+  }
+  .mobile-only {
+    display: block;
+  }
+  .headerJobPost {
+    display: none;
+  }
+
+  .switchcontainer {
+    padding: 10px 15px;
+    flex-direction: column;
+  }
+  .css-46bh2p-MuiCardContent-root:last-child {
+    padding: 15px !important;
+  }
+  .activeCont {
+    padding: 0 15px;
+  }
+  .css-5lbw0b-MuiTypography-root {
+    padding-bottom: 16px !important;
+  }
+  .activeTab.Mui-selected .active_tabCont {
+    justify-self: flex-start !important;
+  }
+  .css-1xylxj1-MuiTypography-root-MuiLink-root {
+    font-size: 14px !important;
+  }
+  .css-heg063-MuiTabs-flexContainer {
+    gap: 18px !important;
+  }
+  .css-heg063-MuiTabs-flexContainer {
+    flex-direction: column !important;
+  }
+  .active_cardCont {
+    flex-direction: column;
+  }
+  .act_CardSub {
+    padding: 12px;
+    width: auto;
+  }
+  .act_catgy {
+    font-size: 12px;
+  }
+  .css-1aquho2-MuiTabs-indicator {
+    display: none !important;
+  }
+
+  .act_viewImg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .active_tabView {
+    font-size: 16px;
+  }
+  .active_tabCont {
+    gap: 6px;
+    justify-content: flex-start;
+  }
+}

@@ -1,0 +1,504 @@
+.save_mange {
+  font-size: 12px;
+  color: #2196f3;
+  border-bottom: 2px solid #2196f3;
+  padding-bottom: 2px;
+  font-weight: 500;
+}
+.cardContainerSave {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 70px 52px 150px;
+}
+.save_img {
+  width: 30px;
+  height: 30px;
+}
+.save_subtitle {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 43.2px;
+  text-align: left;
+  color: #2196f3;
+}
+.save_title {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  text-align: left;
+  color: #8b8b8b;
+}
+.save_cont {
+  width: 300px;
+  height: 130px;
+  background-color: #eff5fc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.save_subCont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: #2196f3;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 43.2px;
+  text-align: left;
+  padding-bottom: 4px;
+}
+.switchcontainer {
+  padding: 0 70px 32px 150px;
+  /* flex-direction: column; */
+}
+.css-1xylxj1-MuiTypography-root-MuiLink-root {
+  color: #8b8b8b !important;
+  text-decoration: none !important;
+}
+.pieChartCont {
+  position: relative;
+  margin-bottom: 70px;
+}
+.save_two {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 43.2px;
+  color: #2196f3;
+}
+.save_pieJob {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #8b8b8b;
+}
+.save_pieTxt {
+  position: absolute;
+  top: 50%;
+  left: 23%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.pieChartImage {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: translate(-50%, -50%);
+}
+
+.top-left {
+  top: 48%;
+  left: 5%;
+}
+
+.top-right {
+  top: 1%;
+  right: 59%;
+}
+
+.bottom-left {
+  bottom: -33%;
+  left: 18%;
+}
+
+.bottom-right {
+  bottom: 18%;
+  right: 52%;
+}
+
+.pieChartImage img {
+  width: 64px;
+  height: 60px;
+}
+
+.pieChartImage span {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  text-align: left;
+}
+.save_short {
+  color: #4b9cd3;
+}
+.save_no {
+  color: #b9d9eb;
+}
+.save_reject {
+  color: #b0c4de;
+}
+.save_select {
+  color: #4b9cd3;
+}
+.active_appBar {
+  margin-bottom: 32px !important;
+}
+.top_lft {
+  transform: rotate(-20deg);
+}
+.top_rgt {
+  transform: rotate(-46deg);
+}
+.bottom_lft {
+  transform: rotate(53deg);
+}
+.bottom_rgt {
+  transform: rotate(-172deg);
+}
+.shortlisted-label {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  text-align: left;
+  color: #4a4a4a;
+}
+.status {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16.8px;
+  text-align: left;
+}
+.save_statusSave {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  text-align: left;
+  color: #8b8b8b;
+}
+.shortlisted {
+  color: #2196f3;
+}
+.selected {
+  color: #07c271;
+}
+.rejected {
+  color: #ff3b3c;
+}
+.save_stsCont {
+  border-radius: 5px;
+  padding: 4px 10px;
+  background-color: #eff5fc;
+}
+.savedContainer .cardmain {
+  width: 961px;
+}
+.jobPostedScr .filterContainer2 {
+  padding: 0 70px 0 150px;
+}
+.post_3dot {
+  width: 28px;
+  height: 28px;
+}
+.main_sub1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.savedContainer {
+  width: 660px;
+}
+.savedContainer .filter_sort {
+  /* display: inline !important; */
+  flex-direction: column;
+  align-items: flex-start;
+}
+.post_btnJob {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  text-align: left;
+  color: #8b8b8b;
+  border: 1px solid #bbb9b9;
+  background-color: #ffffff;
+  display: flex;
+  gap: 5px;
+  border-radius: 10px;
+  padding: 10px 15px;
+}
+.post_week {
+  color: #2196f3;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.2px;
+  text-align: left;
+}
+.post_btnCont {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 67%;
+  padding-bottom: 32px;
+}
+.post_btnGap {
+  display: flex;
+  gap: 33px;
+}
+.post_act {
+  color: #07c271;
+  font-weight: 500;
+}
+.post_hold {
+  color: #e7a90b;
+  font-weight: 500;
+}
+.post_reject {
+  color: #ff3b3c;
+  font-weight: 500;
+}
+.post_expire {
+  color: #2196f3;
+  font-weight: 500;
+}
+.post_hour {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  color: #8b8b8b;
+  padding-left: 10px;
+  border-left: 0.8px solid #cccccc;
+}
+.main_subpost {
+  gap: 10px;
+}
+.post_edit {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16.8px;
+  color: #8b8b8b;
+}
+.edit_btn {
+  background-color: #eff5fc;
+  border: 1px solid #eff5fc;
+  box-shadow: 0 4px 4px 0 #000000;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  padding: 4px 10px;
+}
+.post_containerContent {
+  display: flex;
+  align-items: flex-start;
+  gap: 44px;
+}
+
+.post_btnJob:hover {
+  background-color: #eff5fc;
+  color: #8b8b8b;
+  border: 1px solid #68bcff;
+}
+
+/* MEDIA QUERY */
+
+@media (max-width: 300px) {
+  .desktop-only {
+    display: none;
+  }
+  .mobile-only {
+    display: block;
+  }
+}
+
+@media (min-width: 301px) and (max-width: 480px) {
+  .desktop-only {
+    display: none;
+  }
+  .mobile-only {
+    display: block;
+  }
+  .cardContainerSave {
+    flex-direction: column;
+    gap: 12px;
+    padding: 15px;
+  }
+  .save_cont {
+    width: 270px;
+  }
+  .jobPostedScr .filterContainer2 {
+    padding: 15px;
+  }
+  .filter_sortP,
+  .post_btnGap {
+    flex-direction: column;
+  }
+  .post_btnCont {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+  .css-172kpif-MuiResponsiveChart-container > svg {
+    width: 165px !important;
+    height: 120px !important;
+  }
+  .post_btnCont {
+    width: 54%;
+  }
+  .job_review {
+    font-size: 10px;
+    padding-right: 0;
+  }
+  .post_containerContent {
+    flex-direction: column;
+    gap: 0;
+  }
+  .jl_location {
+    /* width: fit-content; */
+    flex-direction: unset;
+  }
+  .job_starIcon {
+    width: 18px;
+    height: 18px;
+  }
+  .pieChartCont {
+    display: none;
+  }
+  .savedContainer .cardmain {
+    width: 240px;
+  }
+
+  .savedContainer .filter_sort {
+    width: fit-content;
+  }
+  .savedContainer{
+    width: unset;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .desktop-only {
+    display: none;
+  }
+  .mobile-only {
+    display: block;
+  }
+  .switchcontainer {
+    padding: 0 30px 24px;
+    /* flex-direction: column;   */
+  }
+  .cardContainerSave {
+    padding: 0 30px 24px;
+    gap: 15px;
+  }
+  .jobPostedScr .filterContainer2 {
+    padding: 0 30px;
+  }
+  .post_btnCont {
+    width: -webkit-fill-available;
+  }
+  .post_btnGap {
+    gap: 6px;
+  }
+
+  .cardmain {
+    width: 710px;
+  }
+  .post_containerContent {
+    gap: 0;
+    justify-content: space-between;
+  }
+  .job_subskill {
+    overflow-x: scroll;
+    scrollbar-color: transparent;
+  }
+  .save_subCont {
+    gap: 6px;
+  }
+  .save_img {
+    width: 24px;
+    height: 24px;
+  }
+  .save_subtitle {
+    font-size: 25px;
+    line-height: 30.2px;
+  }
+  .save_title {
+    font-size: 14px;
+  }
+  .activeCont {
+    padding: 0 30px;
+  }
+  .save_pieTxt {
+    top: 50%;
+    left: 31%;
+  }
+  .bottom-right {
+    bottom: 25%;
+    right: 40%;
+  }
+  .top-right {
+    top: -1%;
+    right: 51%;
+  }
+  .bottom-left {
+    bottom: -31%;
+    left: 21%;
+  }
+  .css-172kpif-MuiResponsiveChart-container {
+    width: 93% !important;
+  }
+  .savedPieChart {
+    width: 660px;
+  }
+  .cardmain {
+    width: auto;
+  }
+  .post_subContainer {
+    width: 570px;
+  }
+  .job_para {
+    font-size: 16px;
+    padding-bottom: 12px;
+  }
+  .job_abc {
+    font-size: 14px;
+  }
+  .job_chn {
+    font-size: 12px;
+  }
+  .job_skill {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+  .job_time {
+    font-size: 12px;
+    width: 80px;
+    height: 20px;
+  }
+  .save_statusSave {
+    font-size: 10px;
+  }
+  .status {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 960px) {
+  .desktop-only {
+    display: none;
+  }
+  .mobile-only {
+    display: block;
+  }
+}
+
+@media (min-width: 961px) {
+  .desktop-only {
+    display: block;
+  }
+  .mobile-only {
+    display: none;
+  }
+}

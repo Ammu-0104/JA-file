@@ -1,0 +1,907 @@
+a {
+  text-decoration: 2px solid #2196f3;
+}
+.viewContainer {
+  background-color: #fafafa;
+}
+.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+  left: 600px;
+}
+
+.apply-button {
+  color: white;
+  font-size: 20px;
+  border-radius: 10px;
+  padding: 5px;
+  background-color: #2196f3;
+}
+
+.modal-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.close-icon {
+  position: relative;
+  left: 620px;
+  top: -60px;
+}
+
+.success-image {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.success-title {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.success-description {
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.modal-button-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.see-more-button {
+  margin-right: 40px;
+}
+
+.save-button {
+  color: black;
+  font-size: 20px;
+  border-radius: 10px;
+  padding: 5px;
+  border-width: 1px;
+  border-color: #2196f3;
+  background-color: white;
+}
+.view_saveBtn {
+  padding: 10px 20px;
+  background-color: #ffffff;
+  border: 1px solid #2196f3;
+  border-radius: 10px;
+  font-size: 16px;
+  color: #8b8b8b;
+}
+.view_JobContainer .main_cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 50px;
+}
+.view_JobContainer .main_viewBtn {
+  display: flex;
+  gap: 40px;
+}
+.view_JobContainer .main_sub1 .job_vsimg {
+  width: 70px;
+  height: 70px;
+}
+.view_JobContainer .main_sub {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+.highViewContainer {
+  gap: 76px;
+  padding: 16px 68px;
+  margin-bottom: 32px;
+}
+.view_listHead {
+  color: #4a4a4a;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.2px;
+  padding-bottom: 8px;
+}
+.view_JobContainer .main_subpart {
+  padding: 0;
+}
+.high_LightsContainer1 {
+  margin: 0 49px 32px 49px;
+  justify-content: center;
+  padding: 22px 24px;
+}
+.view_icons {
+  width: 24px;
+  height: 24px;
+}
+.high_LightsContainer1 .main_cont {
+  width: auto;
+}
+.high_LightsContainer1 .main_subpart1 {
+  width: max-content;
+  gap: 27px;
+  padding-bottom: 16px;
+  border: none;
+  margin: 0;
+}
+.high_LightsContainer1 .main_subpost {
+  padding-bottom: 0;
+}
+.view_headingRes {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.2px;
+  text-align: left;
+  color: #4a4a4a;
+  padding-bottom: 16px;
+}
+
+.switch_container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.main_viewBtn {
+  text-decoration: none;
+  color: inherit;
+}
+
+.view_listHead:hover {
+  color: #2196f3;
+  border-bottom: 2px solid #2196f3;
+  padding-bottom: 6px;
+}
+
+.viewContentCont {
+  padding: 0 81px 72px 49px;
+}
+
+.view_jobApply {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.2px;
+  text-align: left;
+  color: #2196f3;
+  padding-bottom: 24px;
+}
+.Main-job-card-container {
+  width: 1290px;
+}
+.view_apysvBtn {
+  display: flex;
+  gap: 40px;
+}
+.view_paraContent {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.25px;
+  text-align: left;
+  color: #4a4a4a;
+  padding-bottom: 24px;
+}
+.view_keyList {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.25px;
+  text-align: left;
+  color: #4a4a4a;
+  padding-bottom: 10px;
+}
+.view_keyPad {
+  padding-bottom: 0;
+}
+.view_ulList {
+  padding-bottom: 24px;
+  margin: 0;
+}
+
+.view_ulList0 {
+  margin-bottom: 32px;
+  border-bottom: 1px solid #e6e6e6;
+}
+.view_partContent {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16.8px;
+  text-align: left;
+  color: #4a4a4a;
+}
+.view_partHeading {
+  color: #8b8b8b;
+}
+.view_partList {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-bottom: 16px;
+}
+.view_partType {
+  gap: 43px;
+}
+.view_partIndustry {
+  gap: 48px;
+}
+.view_partDept {
+  gap: 24px;
+}
+.view_partRole {
+  gap: 71px;
+}
+.view_partEdu {
+  gap: 37px;
+}
+.view_partSkills {
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  padding-bottom: 42px;
+  border-bottom: 1px solid #e6e6e6;
+  margin-bottom: 32px;
+}
+.view_partSContent {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16.8px;
+  text-align: left;
+  color: #4a4a4a;
+  padding: 10px 20px;
+  border: 1px solid #e6e6e6;
+  border-radius: 10px;
+}
+.view_partContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+.view_reqDept {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16.8px;
+  text-align: left;
+  color: #8b8b8b;
+  padding-bottom: 16px;
+}
+.view_reqAddress {
+  font-weight: 500;
+  padding-bottom: 16px;
+}
+.view_reqWebsite {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  text-align: left;
+  color: #2196f3;
+  padding-bottom: 24px;
+}
+.view_req0 {
+  padding-bottom: 12px;
+}
+.view_reqhr {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  text-align: left;
+  color: #4a4a4a;
+  padding-bottom: 8px;
+}
+.view_reqMan {
+  color: #8b8b8b;
+  font-weight: 400;
+}
+.view_reqContact {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  text-align: left;
+  color: #4a4a4a;
+}
+.view_reqEmail {
+  color: #2196f3;
+}
+.view_reqCont {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 6px;
+}
+.view_reqMain {
+  display: flex;
+  align-items: center;
+  gap: 45px;
+  width: max-content;
+  padding-bottom: 45px;
+}
+.filter_ContainerView {
+  margin: 0 70px 76px 150px;
+  border-radius: 20px;
+}
+.view_crdJob {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  text-align: left;
+  color: #2196f3;
+}
+
+.view_crdJob::after {
+  content: "";
+  width: 1194px;
+  display: inline-block;
+  background-color: #2196f3;
+  height: 0.8px;
+  position: relative;
+  top: -4px;
+  margin-left: 6px;
+}
+
+.view_cardContainer {
+  margin: 0 79px 85px 150px;
+}
+.view_cardSimilar .job_subskill {
+  width: 100%;
+  border-bottom: 1px solid #e6e6e6;
+  padding-bottom: 16px;
+  margin-bottom: 8px;
+  overflow-x: scroll;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.view_arrow {
+  width: 34px;
+}
+
+.view_cardContainer .view_cardContainer {
+  position: relative;
+}
+
+.view_cardContainer .container1 {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  gap: 30px;
+}
+
+.view_cardContainer .container1::-webkit-scrollbar {
+  display: none;
+}
+
+.view_cardSimilar .cardmain {
+  min-width: 410px;
+  margin: 0;
+}
+
+.view_arrowCont {
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+  align-items: center;
+  gap: 16px;
+}
+
+.view_arrow {
+  pointer-events: all;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+}
+.view_cardContainer .job_vsimg {
+  width: 60px;
+  height: 60px;
+}
+.view_cardContainer .job_review {
+  font-size: 12px;
+}
+.view_cardContainer .main_subpart11 {
+  width: max-content;
+  gap: 29px;
+}
+.view_cardContainer .main_subpost {
+  width: auto;
+}
+.view_signHead {
+  font-size: 36px;
+  font-weight: 500;
+  text-align: left;
+  color: #ffffff;
+  padding-left: 156px;
+  padding-bottom: 25px;
+}
+.buttonView {
+  background-color: #2196f3;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  text-align: center;
+  width: 150px;
+  height: 50px;
+}
+
+.buttonView:hover {
+  background-color: #2196f3;
+}
+
+.inputView-with-button-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 156px;
+  position: relative;
+}
+.view_subCont {
+  position: absolute;
+  right: 18px;
+}
+.view_subcribeIcon {
+  position: absolute;
+  right: 14px;
+  top: 15px;
+  width: 18px;
+  height: 18px;
+}
+
+.view_subcribeIcon {
+  position: absolute;
+  right: 14px;
+  top: 13px;
+  width: 20px;
+  height: 20px;
+}
+
+.view_modelHeading {
+  font-size: 32px !important;
+  font-weight: 700 !important;
+  line-height: 38.4px !important;
+  text-align: left !important;
+  color: #4a4a4a !important;
+  padding-bottom: 32px !important;
+}
+
+.view_modelPara {
+  font-size: 20px !important;
+  font-weight: 500 !important;
+  line-height: 26px !important;
+  text-align: left !important;
+  color: #4a4a4a !important;
+  padding-bottom: 24px !important;
+}
+
+.view_modelPercentage {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 38.4px;
+  text-align: left;
+  color: #4a4a4a;
+  padding-right: 32px;
+}
+
+.view_modelSub {
+  width: 624px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  border: 2px solid #cccccc;
+  padding: 20px;
+  margin-bottom: 24px;
+}
+
+.view_modelIcon {
+  width: 32px;
+  height: 32spx;
+}
+
+.view_modelSubHead {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28.8px;
+  text-align: left;
+  color: #4a4a4a;
+}
+
+.view_modelInner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+.view_mdlPertCont {
+  display: flex;
+  align-items: center;
+  padding-bottom: 32px;
+}
+.css-dihyh4 {
+  width: 1190px;
+  height: 700px;
+  padding: 32px;
+}
+.view_editCont {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-bottom: 32px;
+}
+.view_editHead {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  color: #2196f3;
+  border-bottom: 1px solid #2196f3;
+}
+.css-1i2fjpc-MuiSvgIcon-root {
+  position: relative;
+  left: 557px;
+  top: -9px;
+  z-index: 1;
+}
+.post_jobsBtn {
+  color: #4a4a4a !important;
+  background-color: #ffffff !important;
+  font-weight: 500 !important;
+  font-size: 14px !important;
+}
+.confirm-job0 {
+  height: auto !important;
+  width: 1190px !important;
+}
+.post_cfmClose {
+  padding-bottom: 16px;
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .desktop-only {
+    display: none;
+  }
+  .mobile-only {
+    display: block;
+  }
+  .Main-job-card-container {
+    width: -webkit-fill-available;
+  }
+  .filterContainer2 {
+    width: -webkit-fill-available;
+  }
+  .filter_ContainerView {
+    margin: 0 30px 24px;
+  }
+  .highViewContainer {
+    padding: 10px 30px;
+    gap: 50px;
+    justify-content: space-between;
+  }
+  .view_listHead {
+    white-space: nowrap;
+  }
+  .backroundImage {
+    margin: 0 30px;
+    width: 708px;
+    height: 290px;
+  }
+  .view_listHead {
+    padding-bottom: 4px;
+  }
+  .view_JobContainer .main_cont {
+    padding: 30px;
+  }
+  .high_LightsContainer1 {
+    margin: 0 30px 24px;
+  }
+  .clickbar4,
+  .view_saveBtn {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+  .viewContentCont {
+    padding: 0 30px 24px;
+  }
+  .view_partContainer {
+    gap: 12px;
+  }
+  .view_partSContent {
+    font-size: 12px;
+    padding: 8px 10px;
+  }
+  .view_partSkills {
+    padding-bottom: 32px;
+  }
+  .view_cardContainer {
+    margin: 0 30px 24px;
+  }
+  .view_crdJob::after {
+    width: 612px;
+  }
+  .inputView {
+    width: 485px;
+    height: 70px;
+  }
+  .view_signHead {
+    padding-left: 80px;
+    font-size: 28px;
+  }
+  .inputView-with-button-container {
+    padding-left: 80px;
+  }
+  .view_listHead {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .view_jobApply,
+  .view_headingRes {
+    font-size: 14px;
+  }
+  .view_paraContent,
+  .view_keyList,
+  .view_reqDept,
+  .view_reqWebsite,
+  .view_reqhr,
+  .view_partContent,
+  .view_reqContact {
+    font-size: 12px;
+  }
+  .view_keyList {
+    padding-bottom: 6px;
+  }
+  .view_icons {
+    width: 20px;
+    height: 20px;
+  }
+  .view_cardContainer .container1 {
+    gap: 8px;
+  }
+}
+
+@media (min-width: 301px) and (max-width: 480px) {
+  .desktop-only {
+    display: none;
+  }
+  .mobile-only {
+    display: block;
+  }
+  .filterContainerView {
+    width: max-content;
+    margin: 24px auto;
+  }
+  .view_JobContainer .main_cont {
+    padding: 24px 12px;
+    width: auto;
+    /* flex-direction: column; */
+    align-items: flex-start !important;
+  }
+  .job_vsimg {
+    width: 30px !important;
+    height: 30px !important;
+  }
+  .view_JobCon {
+    gap: 12px !important;
+  }
+  .view_JobContainer .main_sub {
+    align-items: flex-start;
+    gap: 12px;
+  }
+  .job_para,
+  .job_abc {
+    font-size: 12px;
+    line-height: 12px;
+  }
+  .clickbar4,
+  .view_saveBtn {
+    padding: 6px;
+    font-size: 7px;
+  }
+  .view_apysvBtn {
+    gap: 12px;
+  }
+  .job_star {
+    font-size: 10px;
+    padding: 0;
+  }
+  .view_JobContainer .main_cont {
+    gap: 6px;
+  }
+  .highViewContainer {
+    padding: 8px 12px;
+  }
+  .highViewContainer {
+    gap: 12px;
+    margin-bottom: 24px;
+    width: max-content;
+  }
+  .view_listHead {
+    font-size: 8px;
+    padding-bottom: 4px;
+  }
+  .high_LightsContainer1 {
+    margin: 0 12px 24px 12px;
+    padding: 12px;
+    height: auto;
+    width: min-content;
+  }
+  .job_location {
+    width: 15px;
+    height: 15px;
+    margin-right: 6px;
+  }
+  .job_rew {
+    width: 16px;
+    height: 16px;
+  }
+  .high_LightsContainer1 .main_cont {
+    width: fit-content;
+  }
+  .job_submain {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .main_cont {
+    padding: 0;
+  }
+  .job_skill {
+    padding: 5px 10px;
+    line-height: 11px;
+    font-size: 10px;
+  }
+  .high_LightsContainer1 .main_subpost {
+    gap: 6px;
+  }
+  .job_subskill {
+    flex-wrap: wrap;
+    width: 100% !important;
+  }
+  .job_chn {
+    font-size: 10px;
+  }
+  .job_time {
+    font-size: 10px;
+    padding: 3px 6px;
+  }
+  .viewContentCont {
+    padding: 0 12px 24px;
+  }
+  .view_paraContent {
+    font-size: 10px;
+    width: 255px;
+  }
+  .view_jobApply,
+  .view_headingRes {
+    padding-bottom: 12px;
+    font-size: 14px;
+  }
+  .view_ulList {
+    width: 255px;
+    padding-left: 18px;
+  }
+  .view_keyList {
+    font-size: 10px;
+    line-height: 22px;
+  }
+
+  .view_cardContainer {
+    margin: 0 12px 24px;
+  }
+  .view_crdJob::after {
+    width: 182px;
+  }
+  .view_partContent {
+    font-size: 10px;
+    padding-bottom: 12px;
+  }
+  .view_partHeading {
+    white-space: nowrap;
+  }
+  .view_reqWebsite {
+    font-size: 12px;
+    padding-bottom: 12px;
+  }
+  .view_reqhr {
+    font-size: 12px;
+  }
+  .view_reqContact {
+    font-size: 12px;
+  }
+  .view_reqMain {
+    padding-bottom: 24px;
+    gap: 23px;
+  }
+
+  .view_Width {
+    width: 260px;
+  }
+  .view_partContainer {
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: flex-start;
+  }
+  .view_partSContent {
+    font-size: 10px;
+    padding: 4px 8px;
+  }
+  .view_reqDept {
+    font-size: 12px;
+    padding-bottom: 6px;
+  }
+  .view_reqCont {
+    align-items: center;
+  }
+  .view_icons {
+    width: 18px;
+    height: 18px;
+  }
+  .view_crdJob {
+    font-size: 14px;
+  }
+  .cardmain {
+    padding: 12px;
+  }
+  .main_subpart {
+    padding-bottom: 8px;
+  }
+  .backroundImage {
+    margin: 24px auto;
+    width: 290px;
+    height: 200px;
+  }
+  .view_signHead {
+    font-size: 16px;
+    margin-left: 16px;
+    padding-left: 0;
+  }
+  .inputView-with-button-container {
+    padding-left: 16px !important;
+  }
+  .job_subpart1 {
+    gap: 6px;
+  }
+  .inputView {
+    width: 265px;
+    height: auto;
+    padding: 15px;
+  }
+  .buttonView {
+    width: 115px;
+    height: 40px;
+    font-size: 12px;
+  }
+  .view_subcribeIcon {
+    right: 9px;
+    top: 11px;
+    width: 16px;
+    height: 16px;
+  }
+  .view_partIndustry {
+    gap: 46px;
+  }
+  .view_partDept {
+    gap: 29px;
+  }
+  .view_partRole {
+    gap: 62px;
+  }
+}

@@ -1,0 +1,397 @@
+.activeCont .pst_contDashborad {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding-bottom: 24px !important;
+}
+.pst_contSub {
+  display: flex;
+  gap: 20px;
+}
+.pst_filter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.pst_filterHead {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.2px;
+  text-align: left;
+  color: #8b8b8b;
+  cursor: pointer;
+}
+.react-datepicker {
+  position: absolute !important;
+  top: 45px !important;
+  right: 70px !important;
+  z-index: 1 !important;
+  /* width: 350px !important; */
+  border: 1px solid #68bcff !important;
+  border-radius: 15px !important;
+}
+.react-datepicker__day--keyboard-selected,
+.react-datepicker__day--selected {
+  border-radius: 50% !important;
+  background-color: #68bcff !important;
+  color: #4a4a4a !important;
+}
+.react-datepicker__header {
+  text-align: center !important;
+  background-color: #ffff !important;
+  padding-top: 6px !important;
+  padding-bottom: 0;
+  position: relative !important;
+  border: none !important;
+}
+.react-datepicker__navigation-icon::before {
+  border-color: #68bcff !important;
+  border-style: solid !important;
+  border-width: 4px 4px 0px 0px !important;
+  height: 10px !important;
+  position: absolute;
+  top: 12px !important;
+  width: 10px !important;
+  border-radius: 2px !important;
+}
+.react-datepicker__aria-live {
+  position: 0 !important;
+}
+.react-datepicker__day {
+  width: 2.5rem !important;
+  line-height: 2.5rem !important;
+  color: #4d4d4d !important;
+  font-size: 14px !important;
+  font-weight: 100 !important;
+}
+.react-datepicker__month-container {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  flex-direction: column !important;
+  box-shadow: 0px 0px 3px 0px #4d4d4d !important;
+  border: 1px solid #68bcff !important;
+  border-radius: 15px !important;
+}
+.react-datepicker__day-name {
+  color: #4a4a4a !important;
+  font-weight: 500 !important;
+  font-size: 12px !important;
+  text-transform: uppercase !important;
+}
+.react-datepicker__current-month {
+  color: #4a4a4a !important;
+  font-weight: 500 !important;
+  font-size: 14px !important;
+  padding: 8px 0 !important;
+}
+.postViewBoard {
+  padding-bottom: 24px;
+  justify-content: flex-end !important;
+}
+.ReactModal__Overlay .ReactModal__Overlay--after-open {
+  position: unset !important;
+  inset: unset !important;
+  background-color: unset !important;
+}
+.filter-option {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.post_filterIcons {
+  width: 50px;
+  height: 50px;
+  background-color: #2196f3;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.filter-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.css-78trlr-MuiButtonBase-root-MuiIconButton-root {
+  padding: 5px 8px !important;
+}
+.css-69i1ev {
+  padding-bottom: 20px !important;
+  justify-content: flex-end !important;
+}
+.ReactModal__Content .ReactModal__Content--after-open {
+  border: 1px solid #68bcff !important;
+  position: absolute !important;
+  inset: 40px !important;
+  background: rgb(255, 255, 255) !important;
+  border-radius: 4px !important;
+  outline: none !important;
+  padding: 20px !important;
+  width: 325px !important;
+  height: 170px !important;
+  top: 325px !important;
+  left: 935px !important;
+}
+.pst_clear {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.2px;
+  color: #2196f3;
+}
+.activePosting .act_contPart2 {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.activePosting .act_part1 {
+  padding-bottom: 6px;
+}
+.activePosting .act_part4 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 8px;
+  border-bottom: 0.4px solid #e6e6e6;
+  margin-bottom: 8px;
+}
+.activePosting .act_part4Gap {
+  display: flex;
+  gap: 8px;
+}
+.activePosting .act_title {
+  border-right: 0;
+  padding-right: 0;
+  font-size: 10px;
+}
+.activePosting .act_contContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 8px;
+  gap: 14px;
+}
+.activePosting .act_CardSub {
+  width: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.activePosting .act_imgContent {
+  position: absolute;
+  top: -5px;
+  left: 0;
+  padding: 4px 8px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  color: #ffffff;
+  background-color: #4a4a4a;
+}
+.activePosting .act_dsg {
+  padding-bottom: 0;
+}
+.activePosting .act_activeGap {
+  display: flex;
+  gap: 5px;
+}
+
+.activePosting .active_cardCont {
+  padding: 12px 8px;
+}
+.activePosting .act_contInner {
+  width: 242px;
+}
+.act_catgy1 {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  color: #4a4a4a;
+}
+.postEdit {
+  top: 133px !important;
+  left: 442px !important;
+  width: 112px !important;
+  height: 90px !important;
+}
+.css-6hp17o-MuiList-root-MuiMenu-list {
+  padding: 12px !important;
+}
+.css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root:hover {
+  background-color: #eff5fc !important;
+  color: #2196f3 !important;
+  border-left: 2px solid #2196f3 !important;
+}
+.activePosting .actVacant {
+  font-size: 14px;
+}
+.activePosting .act_intrest {
+  font-size: 12px;
+}
+.activePosting .act_part3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.activePost2 .act_salary {
+  padding: 0;
+}
+.activePost2.act_part1 {
+  padding-bottom: 8px;
+}
+.activePost2.act_part3 {
+  padding-bottom: 14px !important;
+}
+.activePost2 .act_contContent {
+  gap: 50px;
+}
+.activePost2 .Post_loc {
+  font-size: 12px;
+}
+.postBtn {
+  padding: 4px 8px;
+  border: 1px solid #68bcff;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 15.6px;
+  text-align: left;
+  color: #8b8b8b;
+  background-color: #ffffff;
+}
+.btnReact {
+  background-color: #2196f3;
+  color: #ffffff;
+}
+.act_partBtn {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 18px;
+}
+.activePost2 .act_partSub {
+  padding-bottom: 18px;
+}
+.activePost2 .adrs {
+  font-size: 12px;
+}
+.activePost4 .act_CardSub {
+  background-color: #ffffff;
+  padding: 0;
+}
+.activePost4 .act_partBtn {
+  padding-bottom: 8px;
+  border-bottom: 0.4px solid #e6e6e6;
+  margin-bottom: 8px;
+}
+.ReactModal__Content.ReactModal__Content--after-open {
+  position: absolute !important;
+  left: 948px !important;
+  top: 317px !important;
+}
+.ReactModal__Overlay .ReactModal__Overlay--after-open {
+  position: unset !important;
+  inset: unset !important;
+  background-color: unset !important;
+}
+.customMenu {
+  width: 112px;
+  height: 90px;
+  position: absolute;
+  left: 330px;
+  top: 435px;
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .desktop-only {
+    display: none;
+  }
+  .mobile-only {
+    display: block;
+  }
+
+  .activeCont .activeHeading {
+    font-size: 14px !important;
+  }
+  .active_headingTab {
+    font-size: 14px;
+    white-space: nowrap;
+  }
+  .pst_filterHead {
+    font-size: 14px;
+  }
+  .pstImg_filter {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@media (min-width: 301px) and (max-width: 480px) {
+  .desktop-only {
+    display: none;
+  }
+  .mobile-only {
+    display: block;
+  }
+  .headerJobPost {
+    display: none;
+  }
+  .switchcontainer {
+    padding: 10px 15px;
+  }
+  .activeCont .pst_contDashborad {
+    flex-direction: column;
+  }
+  .active_headingTab {
+    font-size: 16px;
+  }
+  .activePosting .act_CardSub {
+    width: auto;
+  }
+  .css-heg063-MuiTabs-flexContainer {
+    gap: 24px !important;
+  }
+  .active_cardCont {
+    width: 240px;
+  }
+  .activePosting .act_contContent,
+  .activePosting .act_part1,
+  .act_part2 {
+    width: fit-content;
+    gap: 18px;
+  }
+  .act_cardHead {
+    font-size: 12px !important;
+  }
+  .activePosting .act_part4 {
+    width: fit-content;
+    gap: 8px;
+  }
+  .activePosting .act_part3 {
+    width: fit-content;
+    gap: 6px;
+  }
+  .ReactModal__Content.ReactModal__Content--after-open {
+    left: 0px !important;
+    top: 132px !important;
+  }
+  .act_partSub {
+    gap: 3px;
+  }
+
+  .datepicker {
+    top: 65px !important;
+    right: -94px !important;
+  }
+  .act_partSub {
+    gap: 8px;
+  }
+}

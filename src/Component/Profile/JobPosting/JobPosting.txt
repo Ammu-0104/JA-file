@@ -1,0 +1,3269 @@
+import React, { useState } from "react";
+import "./jobposting.css";
+import kodukkuLogo from "../../assets/images/klogo.svg";
+import { Link } from "react-router-dom";
+import Switch from "@mui/material/Switch";
+import Box from "@mui/material/Box";
+import Stepper from "@mui/material/Stepper";
+import Step from "@mui/material/Step";
+import StepLabel from "@mui/material/StepLabel";
+import Button from "@mui/material/Button";
+import Typography from "@mui/material/Typography";
+import { StepConnector } from "@mui/material";
+import { withStyles } from "@mui/styles";
+import { ThemeProvider, createTheme } from "@mui/material/styles";
+import { styled, alpha } from "@mui/material/styles";
+import Menu from "@mui/material/Menu";
+import { ToggleButton } from "primereact/togglebutton";
+import EastIcon from "@mui/icons-material/East";
+import Modal from "@mui/material/Modal";
+import Scuccess from "../../assets/images/success.png";
+import CloseIcon from "@mui/icons-material/Close";
+import JobPostStep2 from "./JobPostStep2";
+import JobPostStep3 from "./JobPostStep3";
+import JobPostStep1 from './JobPostStep1';
+
+
+const label = { inputProps: { "aria-label": "Checkbox demo" } };
+
+function ToggleButtonGroup({
+  id,
+  onLabel,
+  offLabel,
+  onIcon,
+  offIcon,
+  className,
+}) {
+  const [checked, setChecked] = useState(false);
+
+  const handleChange = (e) => {
+    setChecked(e.value);
+  };
+
+  return (
+    <div className="post_btnHover">
+      <ToggleButton
+        id={id}
+        onLabel={onLabel}
+        offLabel={offLabel}
+        onIcon={onIcon}
+        offIcon={offIcon}
+        checked={checked}
+        onChange={handleChange}
+        className={className}
+        style={{
+          backgroundColor: checked ? "#2196F3" : "transparent",
+          color: checked ? "white" : "#8B8B8B",
+          fontSize: checked ? "14px" : "14px",
+          borderRadius: "10px",
+        }}
+      />
+    </div>
+  );
+}
+
+function ToggleButtonGroup1({
+  id,
+  onLabel,
+  offLabel,
+  onIcon,
+  offIcon,
+  className,
+}) {
+  const [checked, setChecked] = useState(false);
+
+  const handleChange = (e) => {
+    setChecked(e.value);
+  };
+
+  return (
+    <div className="post_btnHover">
+      <ToggleButton
+        id={id}
+        onLabel={onLabel}
+        offLabel={offLabel}
+        onIcon={onIcon}
+        offIcon={offIcon}
+        checked={checked}
+        onChange={handleChange}
+        className={className}
+        style={{
+          width: "auto",
+          height: "auto",
+          backgroundColor: checked ? "#2196F3" : "transparent",
+          color: checked ? "white" : "#8B8B8B",
+          fontSize: checked ? "12px" : "12px",
+        }}
+      />
+    </div>
+  );
+}
+
+function ToggleButtonGroup2({
+  id,
+  onLabel,
+  offLabel,
+  onIcon,
+  offIcon,
+  className,
+}) {
+  const [checked, setChecked] = useState(false);
+
+  const handleChange = (e) => {
+    setChecked(e.value);
+  };
+
+  return (
+    <div className="post_btnHover">
+      <ToggleButton
+        id={id}
+        onLabel={onLabel}
+        offLabel={offLabel}
+        onIcon={onIcon}
+        offIcon={offIcon}
+        checked={checked}
+        onChange={handleChange}
+        className={className}
+        style={{
+          width: "auto",
+          height: "auto",
+          backgroundColor: checked ? "#2196F3" : "transparent",
+          color: checked ? "white" : "#8B8B8B",
+          fontSize: checked ? "14px" : "14px",
+        }}
+      />
+    </div>
+  );
+}
+
+function WeekendsFunction({
+  id,
+  onLabel,
+  offLabel,
+  onIcon,
+  offIcon,
+  className,
+}) {
+  const [checked, setChecked] = useState(false);
+
+  const handleChange = (e) => {
+    setChecked(e.value);
+  };
+
+  return (
+    <div className="post_btnHover">
+      <ToggleButton
+        id={id}
+        onLabel={onLabel}
+        offLabel={offLabel}
+        onIcon={onIcon}
+        offIcon={offIcon}
+        checked={checked}
+        onChange={handleChange}
+        className={className}
+        style={{
+          width: "41px",
+          height: "40px",
+          backgroundColor: checked ? "#2196F3" : "transparent",
+          color: checked ? "white" : "#8B8B8B",
+          fontSize: checked ? "20px" : "20px",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      />
+    </div>
+  );
+}
+
+function Gender({ id, onLabel, offLabel, onIcon, offIcon, className }) {
+  const [checked, setChecked] = useState(false);
+
+  const handleChange = (e) => {
+    setChecked(e.value);
+  };
+
+  return (
+    <div className="post_btnHover">
+      <ToggleButton
+        id={id}
+        onLabel={onLabel}
+        offLabel={offLabel}
+        onIcon={onIcon}
+        offIcon={offIcon}
+        checked={checked}
+        onChange={handleChange}
+        className={className}
+        style={{
+          width: "auto",
+          height: "auto",
+          backgroundColor: checked ? "#2196F3" : "transparent",
+          color: checked ? "white" : "#8B8B8B",
+          fontSize: checked ? "14px" : "14px",
+        }}
+      />
+    </div>
+  );
+}
+
+function Language({ id, onLabel, offLabel, onIcon, offIcon, className }) {
+  const [checked, setChecked] = useState(false);
+
+  const handleChange = (e) => {
+    setChecked(e.value);
+  };
+
+  return (
+    <div className="post_btnHover">
+      <ToggleButton
+        id={id}
+        onLabel={onLabel}
+        offLabel={offLabel}
+        onIcon={onIcon}
+        offIcon={offIcon}
+        checked={checked}
+        onChange={handleChange}
+        className={className}
+        style={{
+          width: "auto",
+          height: "auto",
+          backgroundColor: checked ? "#2196F3" : "transparent",
+          color: checked ? "white" : "#8B8B8B",
+          fontSize: checked ? "14px" : "14px",
+        }}
+      />
+    </div>
+  );
+}
+
+function Candidate({ id, onLabel, offLabel, onIcon, offIcon, className }) {
+  const [checked, setChecked] = useState(false);
+
+  const handleChange = (e) => {
+    setChecked(e.value);
+  };
+
+  return (
+    <div className="post_btnHover">
+      <ToggleButton
+        id={id}
+        onLabel={onLabel}
+        offLabel={offLabel}
+        onIcon={onIcon}
+        offIcon={offIcon}
+        checked={checked}
+        onChange={handleChange}
+        className={className}
+        style={{
+          width: "auto",
+          height: "auto",
+          backgroundColor: checked ? "#2196F3" : "transparent",
+          color: checked ? "white" : "#8B8B8B",
+          fontSize: checked ? "14px" : "14px",
+        }}
+      />
+    </div>
+  );
+}
+
+function PreferredSkils({ id, onLabel, offLabel, onIcon, offIcon, className }) {
+  const [checked, setChecked] = useState(false);
+
+  const handleChange = (e) => {
+    setChecked(e.value);
+  };
+
+  return (
+    <div className="post_btnHover">
+      <ToggleButton
+        id={id}
+        onLabel={onLabel}
+        offLabel={offLabel}
+        onIcon={onIcon}
+        offIcon={offIcon}
+        checked={checked}
+        onChange={handleChange}
+        className={className}
+        style={{
+          width: "auto",
+          height: "auto",
+          backgroundColor: checked ? "#2196F3" : "transparent",
+          color: checked ? "white" : "#8B8B8B",
+          fontSize: checked ? "14px" : "14px",
+        }}
+      />
+    </div>
+  );
+}
+
+function Bonus({ id, onLabel, offLabel, onIcon, offIcon, className }) {
+  const [checked, setChecked] = useState(false);
+
+  const handleChange = (e) => {
+    setChecked(e.value);
+  };
+
+  return (
+    <div className="post_btnHover">
+      <ToggleButton
+        id={id}
+        onLabel={onLabel}
+        offLabel={offLabel}
+        onIcon={onIcon}
+        offIcon={offIcon}
+        checked={checked}
+        onChange={handleChange}
+        className={className}
+        style={{
+          width: "auto",
+          height: "auto",
+          backgroundColor: checked ? "#2196F3" : "transparent",
+          color: checked ? "white" : "#8B8B8B",
+          fontSize: checked ? "14px" : "14px",
+        }}
+      />
+    </div>
+  );
+}
+
+function Candidates({ id, onLabel, offLabel, onIcon, offIcon, className }) {
+  const [checked, setChecked] = useState(false);
+
+  const handleChange = (e) => {
+    setChecked(e.value);
+  };
+
+  return (
+    <div className="post_btnHover">
+      <ToggleButton
+        id={id}
+        onLabel={onLabel}
+        offLabel={offLabel}
+        onIcon={onIcon}
+        offIcon={offIcon}
+        checked={checked}
+        onChange={handleChange}
+        className={className}
+        style={{
+          width: "auto",
+          height: "auto",
+          backgroundColor: checked ? "#2196F3" : "transparent",
+          color: checked ? "white" : "#8B8B8B",
+          fontSize: checked ? "14px" : "14px",
+        }}
+      />
+    </div>
+  );
+}
+
+function Hire({ id, onLabel, offLabel, onIcon, offIcon, className }) {
+  const [checked, setChecked] = useState(false);
+
+  const handleChange = (e) => {
+    setChecked(e.value);
+  };
+
+  return (
+    <div className="post_btnHover">
+      <ToggleButton
+        id={id}
+        onLabel={onLabel}
+        offLabel={offLabel}
+        onIcon={onIcon}
+        offIcon={offIcon}
+        checked={checked}
+        onChange={handleChange}
+        className={className}
+        style={{
+          width: "auto",
+          height: "auto",
+          backgroundColor: checked ? "#2196F3" : "transparent",
+          color: checked ? "white" : "#8B8B8B",
+          fontSize: checked ? "14px" : "14px",
+        }}
+      />
+    </div>
+  );
+}
+
+function Communication({ id, onLabel, offLabel, onIcon, offIcon, className }) {
+  const [checked, setChecked] = useState(false);
+
+  const handleChange = (e) => {
+    setChecked(e.value);
+  };
+
+  return (
+    <div className="post_btnHover">
+      <ToggleButton
+        id={id}
+        onLabel={onLabel}
+        offLabel={offLabel}
+        onIcon={onIcon}
+        offIcon={offIcon}
+        checked={checked}
+        onChange={handleChange}
+        className={className}
+        style={{
+          width: "auto",
+          height: "auto",
+          backgroundColor: checked ? "#2196F3" : "transparent",
+          color: checked ? "white" : "#8B8B8B",
+          fontSize: checked ? "14px" : "14px",
+        }}
+      />
+    </div>
+  );
+}
+
+const StyledMenu = styled((props) => (
+  <Menu
+    elevation={2}
+    anchorOrigin={{
+      vertical: "bottom",
+      horizontal: "right",
+    }}
+    transformOrigin={{
+      vertical: "top",
+      horizontal: "right",
+    }}
+    {...props}
+  />
+))(({ theme }) => ({
+  "& .MuiPaper-root": {
+    borderRadius: 6,
+    marginTop: theme.spacing(1),
+    minWidth: 180,
+    color:
+      theme.palette.mode === "light"
+        ? "rgb(55, 65, 81)"
+        : theme.palette.grey[300],
+    boxShadow:
+      "rgb(255, 255, 255) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px",
+    "& .MuiMenu-list": {
+      padding: "4px 0",
+    },
+    "& .MuiMenuItem-root": {
+      "& .MuiSvgIcon-root": {
+        fontSize: 18,
+        color: theme.palette.text.secondary,
+        marginRight: theme.spacing(1.5),
+      },
+      "&:active": {
+        backgroundColor: alpha(
+          theme.palette.primary.main,
+          theme.palette.action.selectedOpacity
+        ),
+      },
+    },
+  },
+}));
+
+const styleConfirmJob = {
+  position: "absolute",
+  top: "50%",
+  left: "50%",
+  transform: "translate(-50%, -50%)",
+  bgcolor: "background.paper",
+  boxShadow: 24,
+  width: 1290,
+  height: 479,
+  p: 4,
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+  flexDirection: "column",
+};
+
+const ColorStepConnector = withStyles({
+  alternativeLabel: {
+    top: 10,
+    left: "calc(-50% + 12px)",
+    right: "calc(50% + 12px)",
+  },
+  active: {
+    "& $line": {
+      borderColor: "#68BCFF", // Change this color to your desired color
+    },
+  },
+  completed: {
+    "& $line": {
+      borderColor: "#68BCFF", // Change this color to your desired color
+    },
+  },
+  line: {
+    borderColor: "#eaeaf0",
+    borderTopWidth: 3,
+    borderRadius: 1,
+  },
+})(StepConnector);
+
+// Define custom theme for StepIcon
+const theme = createTheme({
+  components: {
+    MuiStepIcon: {
+      styleOverrides: {
+        root: {
+          color: "#2196F3", // Change this color to your desired color
+        },
+        active: {
+          color: "#2196F3", // Change this color to your desired color
+        },
+      },
+    },
+  },
+});
+
+const JobPosting = () => {
+  const [activeButton, setActiveButton] = useState("seeking");
+  const [anchorEl1, setAnchorEl1] = useState(null);
+  const [checked, setChecked] = React.useState(false);
+  const [selectedIndustry, setSelectedIndustry] = useState("");
+  const [checkedRoles, setCheckedRoles] = useState({});
+
+  const handleToggle = (button) => {
+    setActiveButton(button);
+  };
+
+  const steps = ["Job details", "Candidate requirements ", "Company Details"];
+  const [activeStep, setActiveStep] = useState(0);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleNext = () => {
+    if (activeStep === steps.length - 1) {
+      setIsModalOpen(true);
+    } else {
+      setActiveStep((prevActiveStep) => prevActiveStep + 1);
+    }
+  };
+
+  const handleBack = () => {
+    setActiveStep((prevActiveStep) => prevActiveStep - 1);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+  };
+
+  const handleClose1 = () => {
+    setAnchorEl1(null);
+  };
+  const handleCheckboxChange = (event) => {
+    setChecked(event.target.checked);
+  };
+
+  const handleClick1 = (event) => {
+    setAnchorEl1(event.currentTarget);
+  };
+  const handleIndustryChange = (event) => {
+    setSelectedIndustry(event.target.value);
+  };
+
+  const handleRoleChange = (event) => {
+    setCheckedRoles({
+      ...checkedRoles,
+      [event.target.name]: event.target.checked,
+    });
+  };
+
+  const industryOptions = [
+    { value: "management", label: "Top Management Level" },
+    { value: "Banking", label: "Banking & Finance " },
+    { value: "Technology", label: "Information Technology" },
+    { value: "Technology", label: "Information Technology" },
+    { value: "Marketing", label: "HR, Marketing & Business" },
+    { value: "CreativeArts", label: "Creative arts & Well being" },
+    { value: "OtherCategories", label: "Other Categories" },
+    { value: "Industries", label: "Heavy Industries" },
+  ];
+
+  const roleOptions = {
+    management: [
+      "Chief Executive officer (CEO)",
+      "Chief Operations officer (COO)",
+      "Chief Marketing officer (CMO)",
+      "Chief Technology officer (CTO)",
+      "Chief Financial officer (CFO)",
+      "Chief Compliance officer (CCO)",
+      "Chief Human Resources Officer (CHRO)",
+      "General Manager",
+      "Head Human Resource",
+      "IT Head",
+      "President",
+      "Director",
+      "Advsior / Consultant",
+      "Vice President",
+      "Head Operations",
+      "Country/Region Officer",
+      "Project Leader",
+      "Research Analyst/ R&D",
+      "Product Analyst/Designer/Owner",
+      "Expert / Lead",
+      "Risk Advisory/Management",
+      "Principal/Lecturer / Expertise",
+      "Managing Director",
+      "Co-Founder",
+      "Chief Sustainability Officer (CSO)",
+      "Chief People Officer (CPO)",
+      "Chief Engineer",
+      "Chief Information Security Officer (CISO)",
+      "Chief Revenue Officer (CRO)",
+      "Public Relations Officer (PRO)",
+      "Social media / Community Manager",
+      "Chief Supply Chain Officer",
+      "Economist",
+    ],
+    Banking: [
+      "Accounting",
+      "Financial Planning and Analysis (FP&A)",
+      "Audit & Control",
+      "Insurance",
+      "Revenue",
+      "IT Network",
+      "Equity",
+      "Compliance",
+      "Payroll",
+      "Loan",
+      "Treasury and Risk Management",
+      "Financial Systems and Technology",
+      "Actuary",
+      "Financial Consulting",
+      "Credit and Collections",
+      "Trading, Asset and Wealth",
+      "Capital",
+      "BFSI - Investments, Trading & Other",
+      "Banking & Insurance",
+      "Property",
+      "Legal & Compliance",
+      "Fintech",
+      "Retail Chain/FMCG",
+      "Auto Finance",
+      "Chit Funds",
+      "Money Lender",
+      "Stocks & Shares",
+      "Bookkeeping / Auditing Clerk",
+      "Tax",
+      "Statistics",
+      "Reconciliation",
+      "Budgeting",
+      "Assets",
+      "SAP / ERP",
+      "Tally",
+      "Claims",
+      "Chartered Accountancy / CIMA",
+      "Capital Markets",
+      "Fundraising",
+      "Venture Capital & Private Equity",
+    ],
+    Technology: [
+      "Software Development",
+      "DevOps",
+      "Quality Assurance Analyst and Testing",
+      "Advertising & Creative",
+      "IT Network",
+      "Data Science",
+      "Data Architecture",
+      "Application Security Administration",
+      "Big Data",
+      "Cybersecurity",
+      "Blockchain Development",
+      "BPO/KPO",
+      "Hardware and Networks",
+      "IT Support and Security",
+      "Cloud Computing",
+      "Business Analytics and Intelligence",
+      "Web Development",
+      "Artificial Intelligence",
+      "Content Management",
+      "System and Network Administration",
+      "Creative Editing, Animation & Graphics",
+      "Machine Learning",
+      "Digital Marketing",
+      "Full Stack Development",
+      "Product Development",
+      "Project Management / SCRUM",
+      "Back-end Development",
+      "Database Administration",
+      "Tech Start-ups",
+      "Tech Recruitment",
+      "Computer & Network Security",
+      "Computer Games",
+      "Computer Software",
+      "Information Services",
+      "Internet",
+    ],
+    Marketing: [
+      "Marketing",
+      "Operations",
+      "Human Resources",
+      "Procurement & Purchase",
+      "Supply Chain Management",
+      "Risk Management & Compliance",
+      "Market Research",
+      "Sales Support",
+      "Merchandising, Retail",
+      "eCommerce",
+      "Administration & Staff",
+      "Customer Support",
+      "Project Planning",
+      "Inventory Management",
+      "Digital Marketing",
+      "Search Engine Optimization (SEO)",
+      "Distribution",
+      "Recruitment",
+      "Search Engine Marketing (SEM)",
+      "Pay-Per-Click (PPC)",
+      "Content Marketing",
+      "Social Media Marketing (SMM)",
+      "Email Marketing",
+      "Affiliate Marketing",
+      "Online Public Relations (PR)",
+      "Data Analytics",
+      "Social Media Management",
+      "Conversion Rate Optimization (CRO)",
+      "Voice Search Optimization",
+      "Augmented Reality (AR) and Virtual Reality (VR)",
+      "Customer Relationship Management (CRM)",
+      "Retail Analytics",
+      "Business Analytics",
+      "Sales and Support",
+      "Strategic Management",
+      "Advertising",
+      "Branding",
+      "Risk Management",
+      "Business Management",
+      "Staffing and Recruiting",
+    ],
+
+    Educational: [
+      "Civil Engineering",
+      "Mechanical Engineering",
+      "Electrical Engineering",
+      "Architecture and Interior Design",
+      "Aerospace Engineering",
+      "Chemical Engineering",
+      "Computer & IT Engineering & Tech",
+      "Environmental Engineering",
+      "Biomedical Engineering",
+      "Structural Engineering",
+      "Systems Engineering",
+      "School Education",
+      "Colleges Education",
+      "Education Administrator",
+      "Curriculum Developer",
+      "Academic Support Services",
+      "Admissions Officer",
+      "Library",
+      "Fashion Design & Technology",
+      "Biology",
+      "Chemistry",
+      "Physics",
+      "Hospitality",
+      "Geoscience",
+      "Psychology",
+      "Rehabilitation Counselling",
+      "Maths",
+      "Agricultural Technology",
+      "Research and Development",
+      "Curriculum Development",
+      "E-Learning",
+      "Architecture",
+      "Training",
+      "Travel & Tourism",
+      "Aviation & Aerospace",
+      "Marine",
+      "Food Technology",
+      "Doctor",
+      "Lawyer",
+      "Engineer",
+      "Airlines & Aviation",
+      "Science & Technology",
+      "Institutes",
+      "Hospitals / Clinics / Nursing Home",
+      "Pharmaceuticals",
+      "Medical / Healthcare",
+      "Education",
+      "Patent Attorneys",
+      "Accounting Degrees",
+      "Biotechnology",
+      "Dairy",
+      "Defence & Space",
+      "Education Management",
+      "Nanotechnology",
+      "Veterinary",
+    ],
+
+    CreativeArts: [
+      "Art Direction",
+      "Writer/Author",
+      "Filmmaking",
+      "Photography",
+      "Music",
+      "Acting",
+      "Animation",
+      "Yoga",
+      "Dance",
+      "Karate",
+      "Abacus",
+      "Swimming/Surfing",
+      "Fashion",
+      "Sports",
+      "Design Arts",
+      "Crafts",
+      "Culinary",
+      "Multi-disciplinary",
+      "Literary",
+      "Entertainment",
+    ],
+
+    OtherCategories: [
+      "Legal, Law",
+      "Public Safety, Corrections & Security",
+      "Media/Press",
+      "Telecommunication",
+      "Manufacturing and Production",
+      "NGO & Social Organizations",
+      "Allied Healthcare & Clinical",
+      "Agriculture / Allied Industries",
+      "Event Management",
+      "Contract Management",
+      "Business",
+      "Cosmetics",
+      "Crime/Arbitration",
+      "Artist",
+      "Doctor",
+      "Nurse",
+      "Maintenance",
+      "Operator",
+      "Electronics",
+      "Construction / Real Estate",
+      "Religious Institutions",
+      "Electrical",
+      "Physician",
+      "Fertilizers / Chemical",
+      "Surgeon",
+      "Scientist",
+      "Government Bodies",
+      "Journalism",
+      "Health and Wellness",
+      "Pesticides",
+      "Fisheries/Poultry",
+      "Gems / Jewellery",
+      "Gambling & Casinos",
+      "Hotels / Restaurants",
+      "Consultancy",
+      "Alternative Dispute Resolution",
+      "Food Production",
+      "Government Relations",
+      "International Affairs",
+      "International Trade and Development",
+      "Legislative Office",
+      "Military",
+      "Nonprofit Organization Management",
+      "Paper & Forest Products",
+      "Philanthropy",
+      "Ranching",
+      "Public Relations & Communications",
+      "Recreational Facilities and Services",
+      "Judiciary / Law Practices & Services",
+    ],
+    Industries: [
+      "Import / Export",
+      "Manufacturing",
+      "Marbles & Granite",
+      "Steel / Hardware",
+      "Textile & Garments",
+      "Forex Dealers & Bullion",
+      "Printing / Publishing",
+      "Warehousing",
+      "Power / Electricity",
+      "Petrol",
+      "Logistics & Transportation",
+      "Mining",
+      "Automobiles & Auto Parts",
+      "Arms Dealer",
+      "Energy",
+      "Assemblers and Fabricators",
+      "Recycling Operatives",
+      "Oil and Gas",
+      "Manufacturing and Production",
+      "Furniture / Timber",
+      "Apparel & Fashion",
+      "Business Supplies & Equipment",
+      "Electrical & Electronic Manufacturing",
+      "Shipbuilding",
+    ],
+  };
+
+  return (
+    <div className="MainjobPostMainContainer">
+      <div className="jobPostMainContainer">
+        <div className="headerJobPost">
+          <div className="post_logoHead">
+            <img src={kodukkuLogo} alt="logo" />
+          </div>
+
+          <div>
+            <button
+              className="job_seekpost"
+              style={{
+                backgroundColor:
+                  activeButton === "seeking" ? "#2196F3" : "inherit",
+                color: activeButton === "seeking" ? "white" : "inherit",
+              }}
+              onClick={() => handleToggle("seeking")}
+            >
+              <Link
+                style={{
+                  textDecoration: "none",
+                  color: activeButton === "seeking" ? "white" : "#2196F3",
+                }}
+                to="/main/joblisting"
+              >
+                Job Seeking
+              </Link>
+            </button>
+            <button
+              className="job_seekpost"
+              style={{
+                backgroundColor:
+                  activeButton === "posting" ? "#2196F3" : "inherit",
+                color: activeButton === "posting" ? "white" : "inherit",
+              }}
+              onClick={() => handleToggle("posting")}
+            >
+              <Link style={{ textDecoration: "none" }} to="/main/jobPosting">
+                Job Posting
+              </Link>
+            </button>
+          </div>
+        </div>
+
+        <div className="switchcontainer1">
+          <div className="post_breadCont">
+            <div className="switchcontainer1mini">
+              {" "}
+              <p className="post_breadcrums">Home</p>
+             
+ <img src={ArrowIcon} 
+ className="jobArrow" alt="" />
+
+            </div>
+
+            <div className="switchcontainer1mini">
+              {" "}
+              <p className="post_breadcrums"
+>
+                Categories
+              </p>
+             
+ <img src={ArrowIcon} 
+ className="jobArrow" alt="" />
+
+            </div>
+
+            <div className="switchcontainer1mini">
+              {" "}
+              <p className="post_breadcrums">Job Posting</p>
+             
+ <img src={ArrowIcon} 
+ className="jobArrow" alt="" />
+
+            </div>
+
+            <div className="switchcontainer1mini">
+              {" "}
+              <p className="post_breadcrums"
+>
+                Job details{" "}
+              </p>
+             
+ <img src={ArrowIcon} 
+ className="jobArrow" alt="" />
+
+            </div>
+          </div>
+
+          <div className="switchcontainer1mini">
+            {" "}
+            <p className="post_breadcrums"
+>
+              Send job alert for this search
+            </p>
+            <Switch {...label}  />
+          </div>
+        </div>
+
+        <div className="post_stepper">
+          <Stepper
+            activeStep={activeStep}
+            alternativeLabel
+            connector={<ColorStepConnector />}
+          >
+            {steps.map((label, index) => {
+              const isFirstStep = index === 0;
+              // Define classes based on the condition
+              // const stepClasses = isFirstStep ? "extra-class" : "";
+              return (
+                <Step key={label} sx={{ marginTop: "50px" }}>
+                  <StepLabel>{label}</StepLabel>
+                </Step>
+              );
+            })}
+          </Stepper>
+          <ThemeProvider theme={theme}>
+            <Box>
+              <div className="post_stepForm">
+                {activeStep === 0 && (
+            
+                 <div>
+                 <JobPostStep1/>
+                 </div>    
+                )}
+
+                {activeStep === 1 && (
+                 <div>
+                  <JobPostStep2/>
+                 </div>
+                )}
+
+                {activeStep === 2 && (
+                 <div>
+                  <JobPostStep3/>
+                 </div>
+                )}
+              </div>
+              {/* Button and Modal */}
+              <div className="post_bactBtn">
+                <Button
+                  variant="contained"
+                  disabled={activeStep === 0}
+                  onClick={handleBack}
+                >
+                  Back
+                </Button>
+
+                <Button onClick={handleNext} variant="contained">
+                  {activeStep === steps.length - 1
+                    ? "Confirm & Post the Job"
+                    : "Continue"}
+
+                  <EastIcon />
+                </Button>
+              </div>
+
+              {/* Modal */}
+              <Modal
+                open={isModalOpen}
+                onClose={handleCloseModal}
+                aria-labelledby="modal-title"
+                aria-describedby="modal-description"
+              >
+                <Box sx={styleConfirmJob}>
+                  <CloseIcon
+                    sx={{ position: "relative", left: "620px", top: "-60px" }}
+                    onClick={handleCloseModal}
+                  />
+                  <img
+                    src={Scuccess}
+                    alt="close icon"
+                    style={{
+                      width: "100px",
+                      height: "100px",
+                      marginBottom: "20px",
+                    }}
+                  />
+
+                  <Typography
+                    id="modal-modal-title"
+                    variant="h6"
+                    component="h2"
+                    sx={{ fontSize: "36px", marginBottom: "10px" }}
+                  >
+                    Your Job has been posted successfully
+                  </Typography>
+                  <Typography
+                    id="modal-modal-description"
+                    sx={{ fontSize: "20px", marginBottom: "10px", mt: 2 }}
+                  >
+                    Your Job will go live within 5 minutes{" "}
+                  </Typography>
+
+                  <div
+                    style={{
+                      display: "flex",
+                      justifyContent: "space-evenly",
+                      flexDirection: "row",
+                      alignItems: "center",
+                      marginTop: "20px",
+                    }}
+                  >
+                    <Button variant="contained" sx={{ marginRight: "40px" }}>
+                      Edit Job
+                    </Button>
+                    <Button variant="outlined"> See Posted jobs</Button>
+                  </div>
+                </Box>
+              </Modal>
+            </Box>
+          </ThemeProvider>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default JobPosting;
+
+
+JobPostStep1
+
+import React, { useState, useEffect } from "react";
+import "./jobposting.css";
+import kodukkuLogo from "../../assets/images/klogo.svg";
+import { Link } from "react-router-dom";
+import Switch from "@mui/material/Switch";
+import Box from "@mui/material/Box";
+import Stepper from "@mui/material/Stepper";
+import Step from "@mui/material/Step";
+import StepLabel from "@mui/material/StepLabel";
+import Button from "@mui/material/Button";
+import Typography from "@mui/material/Typography";
+import { Select, StepConnector } from "@mui/material";
+import { withStyles } from "@mui/styles";
+import { ThemeProvider, createTheme } from "@mui/material/styles";
+import MenuItem from "@mui/material/MenuItem";
+import Add from "../../assets/images/add.png";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import { styled, alpha } from "@mui/material/styles";
+import Menu from "@mui/material/Menu";
+import { InputText } from "primereact/inputtext";
+import { ToggleButton } from "primereact/togglebutton";
+import Checkbox from "@mui/material/Checkbox";
+import EastIcon from "@mui/icons-material/East";
+import AddIcon from "@mui/icons-material/Add";
+import Radio from "@mui/material/Radio";
+import RadioGroup from "@mui/material/RadioGroup";
+import FormControlLabel from "@mui/material/FormControlLabel";
+import FormControl from "@mui/material/FormControl";
+import Modal from "@mui/material/Modal";
+import Scuccess from "../../assets/images/success.png";
+import CloseIcon from "@mui/icons-material/Close";
+import PostLocation from "../../assets/images/postLocation.svg";
+import { industryOptions, roleOptions } from '../Profile/JsonData';
+const label = { inputProps: { "aria-label": "Checkbox demo" } };
+
+
+
+
+const JobPostStep1 = () => {
+  const [anchorEl1, setAnchorEl1] = useState(null);
+  const [selectedIndustry, setSelectedIndustry] = useState('');
+  const [checkedRoles, setCheckedRoles] = useState({});
+
+  const handleIndustryChange = (event) => {
+    setSelectedIndustry(event.target.value);
+  };
+
+  const handleRoleChange = (event) => {
+    setCheckedRoles({
+      ...checkedRoles,
+      [event.target.name]: event.target.checked,
+    });
+  };
+
+  const handleClose1 = () => {
+    setAnchorEl1(null);
+  };
+  
+  const handleClick1 = (event) => {
+    setAnchorEl1(event.currentTarget);
+  };
+  function ToggleButtonGroup({
+    id,
+    onLabel,
+    offLabel,
+    onIcon,
+    offIcon,
+    className,
+  }) {
+    const [checked, setChecked] = useState(false);
+  
+    const handleChange = (e) => {
+      setChecked(e.value);
+    };
+  
+    return (
+      <div className="post_btnHover">
+        <ToggleButton
+          id={id}
+          onLabel={onLabel}
+          offLabel={offLabel}
+          onIcon={onIcon}
+          offIcon={offIcon}
+          checked={checked}
+          onChange={handleChange}
+          className={className}
+          style={{
+            backgroundColor: checked ? "#2196F3" : "transparent",
+            color: checked ? "white" : "#8B8B8B",
+            fontSize: checked ? "14px" : "14px",
+            borderRadius: "10px",
+          }}
+        />
+      </div>
+    );
+  }
+  
+  function ToggleButtonGroup1({
+    id,
+    onLabel,
+    offLabel,
+    onIcon,
+    offIcon,
+    className,
+  }) {
+    const [checked, setChecked] = useState(false);
+  
+    const handleChange = (e) => {
+      setChecked(e.value);
+    };
+  
+    return (
+      <div className="post_btnHover">
+        <ToggleButton
+          id={id}
+          onLabel={onLabel}
+          offLabel={offLabel}
+          onIcon={onIcon}
+          offIcon={offIcon}
+          checked={checked}
+          onChange={handleChange}
+          className={className}
+          style={{
+            width: "auto",
+            height: "auto",
+            backgroundColor: checked ? "#2196F3" : "transparent",
+            color: checked ? "white" : "#8B8B8B",
+            fontSize: checked ? "12px" : "12px",
+          }}
+        />
+      </div>
+    );
+  }
+  
+  function ToggleButtonGroup2({
+    id,
+    onLabel,
+    offLabel,
+    onIcon,
+    offIcon,
+    className,
+  }) {
+    const [checked, setChecked] = useState(false);
+  
+    const handleChange = (e) => {
+      setChecked(e.value);
+    };
+  
+    return (
+      <div className="post_btnHover">
+        <ToggleButton
+          id={id}
+          onLabel={onLabel}
+          offLabel={offLabel}
+          onIcon={onIcon}
+          offIcon={offIcon}
+          checked={checked}
+          onChange={handleChange}
+          className={className}
+          style={{
+            width: "auto",
+            height: "auto",
+            backgroundColor: checked ? "#2196F3" : "transparent",
+            color: checked ? "white" : "#8B8B8B",
+            fontSize: checked ? "14px" : "14px",
+          }}
+        />
+      </div>
+    );
+  }
+  
+  function WeekendsFunction({
+    id,
+    onLabel,
+    offLabel,
+    onIcon,
+    offIcon,
+    className,
+  }) {
+    const [checked, setChecked] = useState(false);
+  
+    const handleChange = (e) => {
+      setChecked(e.value);
+    };
+  
+    return (
+      <div className="post_btnHover">
+        <ToggleButton
+          id={id}
+          onLabel={onLabel}
+          offLabel={offLabel}
+          onIcon={onIcon}
+          offIcon={offIcon}
+          checked={checked}
+          onChange={handleChange}
+          className={className}
+          style={{
+            width: "41px",
+            height: "40px",
+            backgroundColor: checked ? "#2196F3" : "transparent",
+            color: checked ? "white" : "#8B8B8B",
+            fontSize: checked ? "20px" : "20px",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        />
+      </div>
+    );
+  }
+
+  return (
+    <div>
+          <div className="post_stepCard">
+                    <h1 className="post_aboutthepost">About the Job</h1>
+
+                    <h3 className="post_aboutHeading">Industry</h3>
+                    <div className="post_aboutPad">
+                      <Button
+                        id="demo-customized-button1"
+                        aria-controls={
+                          anchorEl1 ? "demo-customized-menu1" : undefined
+                        }
+                        aria-haspopup="true"
+                        aria-expanded={Boolean(anchorEl1)}
+                        className="clickbar2Industry"
+                        onClick={handleClick1}
+                      >
+                        Select Industry Type
+                        <ExpandMoreIcon
+                          style={{
+                            color: "#2196F3",
+                            width: "22px",
+                            height: "22px",
+                            marginRight: "10px",
+                            marginLeft: "10px",
+                          }}
+                        />
+                      </Button>
+                      <Menu
+      id="demo-customized-menu1"
+      anchorEl={anchorEl1}
+      open={Boolean(anchorEl1)}
+      onClose={handleClose1}
+    >
+      <FormControl style={{ margin: '10px', minWidth: 200 }}>
+        <Select
+          native
+          value={selectedIndustry}
+          onChange={handleIndustryChange}
+          inputProps={{
+            name: 'industry',
+            id: 'industry-select',
+          }}
+        >
+          <option aria-label="None" value=""/>
+          {industryOptions.map((option) => (
+            <option key={option.value} value={option.value}>
+              {option.label}
+            </option>
+          ))}
+        </Select>
+      </FormControl>
+      {selectedIndustry && roleOptions[selectedIndustry] && (
+        <>
+          {roleOptions[selectedIndustry].map((role) => (
+            <MenuItem
+              key={role}
+              onClick={handleClose1}
+              disableRipple
+            >
+              <FormControlLabel
+                control={
+                  <Checkbox
+                    checked={checkedRoles[role] || false}
+                    onChange={handleRoleChange}
+                    name={role}
+                  />
+                }
+                label={role}
+              />
+            </MenuItem>
+          ))}
+        </>
+      )}
+    </Menu>
+                    </div>
+
+                    <h3 className="post_aboutHeading">
+                      Job Title / Designation
+                    </h3>
+                    <div className="post_aboutPad">
+                      <div>
+                        <span>
+                          <InputText
+                            placeholder="Select Job Title / designation"
+                            className="post_textSize"
+                          />
+                        </span>
+                      </div>
+                    </div>
+
+                    <h3 className="post_aboutHeading">Job Openings</h3>
+                    <div className="post_aboutPad">
+                      <div>
+                        <span>
+                          <InputText
+                            placeholder="Enter No of Job Openings  eg. 05 "
+                            className="post_textSize"
+                          />
+                        </span>
+                      </div>
+                    </div>
+
+                    <h3 className="post_aboutHeading">Work Shift</h3>
+
+                    <div className="post_aboutPart post_aboutPad">
+                      <ToggleButtonGroup
+                        id="toggleButton1"
+                        onLabel="Day Shift"
+                        offLabel="Day Shift"
+                        onIcon="pi pi-check"
+                        offIcon="pi pi-plus"
+                                  />
+                      <ToggleButtonGroup
+                        id="toggleButton2"
+                        onLabel="Night Shift"
+                        offLabel="Night Shift"
+                        onIcon="pi pi-check"
+                        offIcon="pi pi-plus"
+                                  />
+                      <ToggleButtonGroup
+                        id="toggleButton3"
+                        onLabel="Rotational Shift"
+                        offLabel="Rotational Shift"
+                        onIcon="pi pi-check"
+                        offIcon="pi pi-plus"
+                                  />
+                    </div>
+
+                    <h3 className="post_aboutHeading">Work Mode</h3>
+
+                    <div className="post_aboutPart post_aboutPad">
+                      <ToggleButtonGroup1
+                        id="toggleButton1"
+                        onLabel="In Office"
+                        offLabel="In Office"
+                        onIcon="pi pi-check"
+                        offIcon="pi pi-plus"
+                                  />
+                      <ToggleButtonGroup1
+                        id="toggleButton2"
+                        onLabel="Virtual"
+                        offLabel="Virtual"
+                        onIcon="pi pi-check"
+                        offIcon="pi pi-plus"
+                                  />
+                      <ToggleButtonGroup1
+                        id="toggleButton3"
+                        onLabel="Hybrid"
+                        offLabel="Hybrid"
+                        onIcon="pi pi-check"
+                        offIcon="pi pi-plus"
+                                  />
+
+                      <ToggleButtonGroup1
+                        id="toggleButton3"
+                        onLabel="Onsite"
+                        offLabel="Onsite"
+                        onIcon="pi pi-check"
+                        offIcon="pi pi-plus"
+                                  />
+                    </div>
+
+                    <h3 className="post_aboutHeading post_aboutPad">
+                      Work Type
+                    </h3>
+
+                    <div className="post_aboutPart post_abtPad">
+                      <h6 className="post_temporary">Temporary</h6>
+                      <ToggleButtonGroup2
+                        id="toggleButton1"
+                        onLabel="Full Time"
+                        offLabel="Full Time"
+                        onIcon="pi pi-check"
+                        offIcon="pi pi-plus"
+                                  />
+                      <ToggleButtonGroup2
+                        id="toggleButton2"
+                        onLabel="Part Time"
+                        offLabel="Part Time"
+                        onIcon="pi pi-check"
+                        offIcon="pi pi-plus"
+                                  />
+                      <ToggleButtonGroup2
+                        id="toggleButton3"
+                        onLabel="Internship"
+                        offLabel="Internship"
+                        onIcon="pi pi-check"
+                        offIcon="pi pi-plus"
+                                  />
+                    </div>
+
+                    <div className="post_aboutPart post_aboutPad">
+                      <h6 className="post_temporary">Permanent</h6>
+                      <ToggleButtonGroup2
+                        id="toggleButton1"
+                        onLabel="Full Time"
+                        offLabel="Full Time"
+                        onIcon="pi pi-check"
+                        offIcon="pi pi-plus"
+                                  />
+                      <ToggleButtonGroup2
+                        id="toggleButton2"
+                        onLabel="Part Time"
+                        offLabel="Part Time"
+                        onIcon="pi pi-check"
+                        offIcon="pi pi-plus"
+                                  />
+                      <ToggleButtonGroup2
+                        id="toggleButton3"
+                        onLabel="Internship"
+                        offLabel="Internship"
+                        onIcon="pi pi-check"
+                        offIcon="pi pi-plus"
+                                  />
+                    </div>
+
+                    <h3 className="post_aboutHeading">Salary Scale</h3>
+
+                    <div className="post_aboutPad post_salflex">
+                      <InputText
+                        className="post_inpuTextSalary"
+                        placeholder="₹Enter Min Salary - Eg. 1 LPA"
+                      />
+
+                      <p className="post_toPara">to</p>
+
+                      <InputText
+                        className="post_inpuTextSalary"
+                        placeholder="₹Enter Min Salary - Eg. 1 LPA"
+                      />
+
+                      <p className="post_toPara">Per Annum</p>
+                    </div>
+
+                    <h3 className="post_aboutHeading">Working days</h3>
+
+                    <div className="post_aboutPart post_monPad">
+                      <Checkbox
+                        {...label}
+                        
+                        // sx={{
+                        //   width: "32px",
+                        //   height: "32px",
+                        //   marginRight: "10px",
+                        // }}
+                      />
+                      <p className="post_monToFri">Monday to Friday</p>
+                    </div>
+
+                    <div className="post_aboutPart post_aboutPad">
+                      <Checkbox
+                        {...label}
+                        
+                        // sx={{
+                        //   width: "32px",
+                        //   height: "32px",
+                        //   marginRight: "10px",
+                        // }}
+                      />
+                      <p className="post_monToFri">Monday to Saturday</p>
+                    </div>
+
+                    <div className="post_aboutPart pb-5">
+                      <WeekendsFunction
+                        id="toggleButton1"
+                        onLabel="S"
+                        offLabel="S"
+                                  />
+
+                      <WeekendsFunction
+                        id="toggleButton2"
+                        onLabel="M"
+                        offLabel="M"
+                                  />
+
+                      <WeekendsFunction
+                        id="toggleButton3"
+                        onLabel="T"
+                        offLabel="T"
+                                  />
+
+                      <WeekendsFunction
+                        id="toggleButton4"
+                        onLabel="W"
+                        offLabel="W"
+                                  />
+
+                      <WeekendsFunction
+                        id="toggleButton5"
+                        onLabel="T"
+                        offLabel="T"
+                                  />
+
+                      <WeekendsFunction
+                        id="toggleButton6"
+                        onLabel="F"
+                        offLabel="F"
+                                  />
+
+                      <WeekendsFunction
+                        id="toggleButton7"
+                        onLabel="S"
+                        offLabel="S"
+                                  />
+                    </div>
+
+                    <h3 className="post_aboutHeading">Job Description</h3>
+
+                    <div className="custom-textarea-container pb-5">
+                      <textarea
+                        className="custom-textarea"
+                        placeholder="Please mention about key responsibilities, Qualification and others in detail"
+                      />
+                    </div>
+
+                    <h3 className="post_aboutHeading">Job Address</h3>
+
+                    <div className="post_aboutPart post_aboutPad post_flexloc">
+                      <InputText
+                        placeholder="Type the Job Address"
+                        className="input-with-placeholder"
+                      />
+                      <div className="post_locSub">
+                        <img src={PostLocation} alt="" />
+                        <h3 className="post_detectLoc">Detect Location</h3>
+                      </div>
+                    </div>
+
+                    <div className="pb-6">
+                      <iframe
+                        className="post_iframe"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.135099205469!2d80.21299197507632!3d12.963205787351377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525db9195fde7b%3A0x87a8ca7d197ca826!2sKodukku%20Classifieds%20Private%20Limited!5e0!3m2!1sen!2sin!4v1711107736387!5m2!1sen!2sin"
+                        allowFullScreen=""
+                        loading="lazy"
+                        referrerPolicy="no-referrer-when-downgrade"
+                        title="Google Maps"
+                      ></iframe>
+                    </div>
+                  </div>
+    </div>
+  )
+}
+
+export default JobPostStep1
+
+
+JobPostStep2
+
+import React, { useState, useEffect } from "react";
+import "./jobposting.css";
+import kodukkuLogo from "../../assets/images/klogo.svg";
+import { Link } from "react-router-dom";
+import Switch from "@mui/material/Switch";
+import Box from "@mui/material/Box";
+import Stepper from "@mui/material/Stepper";
+import Step from "@mui/material/Step";
+import StepLabel from "@mui/material/StepLabel";
+import Button from "@mui/material/Button";
+import Typography from "@mui/material/Typography";
+import { Select, StepConnector } from "@mui/material";
+import { withStyles } from "@mui/styles";
+import { ThemeProvider, createTheme } from "@mui/material/styles";
+import MenuItem from "@mui/material/MenuItem";
+import Add from "../../assets/images/add.png";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import { styled, alpha } from "@mui/material/styles";
+import Menu from "@mui/material/Menu";
+import { InputText } from "primereact/inputtext";
+import { ToggleButton } from "primereact/togglebutton";
+import Checkbox from "@mui/material/Checkbox";
+
+import EastIcon from "@mui/icons-material/East";
+import AddIcon from "@mui/icons-material/Add";
+import Radio from "@mui/material/Radio";
+import RadioGroup from "@mui/material/RadioGroup";
+import FormControlLabel from "@mui/material/FormControlLabel";
+import FormControl from "@mui/material/FormControl";
+import Modal from "@mui/material/Modal";
+import Scuccess from "../../assets/images/success.png";
+import CloseIcon from "@mui/icons-material/Close";
+import PostLocation from "../../assets/images/postLocation.svg";
+const label = { inputProps: { "aria-label": "Checkbox demo" } };
+
+
+const JobPostStep2 = () => {
+  function Candidate({ id, onLabel, offLabel, onIcon, offIcon, className }) {
+    const [checked, setChecked] = useState(false);
+  
+    const handleChange = (e) => {
+      setChecked(e.value);
+    };
+  
+    return (
+      <div className="post_btnHover">
+        <ToggleButton
+          id={id}
+          onLabel={onLabel}
+          offLabel={offLabel}
+          onIcon={onIcon}
+          offIcon={offIcon}
+          checked={checked}
+          onChange={handleChange}
+          className={className}
+          style={{
+            width: "auto",
+            height: "auto",
+            backgroundColor: checked ? "#2196F3" : "transparent",
+            color: checked ? "white" : "#8B8B8B",
+            fontSize: checked ? "14px" : "14px",
+          }}
+        />
+      </div>
+    );
+  }
+  
+  function PreferredSkils({ id, onLabel, offLabel, onIcon, offIcon, className }) {
+    const [checked, setChecked] = useState(false);
+  
+    const handleChange = (e) => {
+      setChecked(e.value);
+    };
+  
+    return (
+      <div className="post_btnHover">
+        <ToggleButton
+          id={id}
+          onLabel={onLabel}
+          offLabel={offLabel}
+          onIcon={onIcon}
+          offIcon={offIcon}
+          checked={checked}
+          onChange={handleChange}
+          className={className}
+          style={{
+            width: "auto",
+            height: "auto",
+            backgroundColor: checked ? "#2196F3" : "transparent",
+            color: checked ? "white" : "#8B8B8B",
+            fontSize: checked ? "14px" : "14px",
+          }}
+        />
+      </div>
+    );
+  }
+
+  function Gender({ id, onLabel, offLabel, onIcon, offIcon, className }) {
+    const [checked, setChecked] = useState(false);
+  
+    const handleChange = (e) => {
+      setChecked(e.value);
+    };
+  
+    return (
+      <div className="post_btnHover">
+        <ToggleButton
+          id={id}
+          onLabel={onLabel}
+          offLabel={offLabel}
+          onIcon={onIcon}
+          offIcon={offIcon}
+          checked={checked}
+          onChange={handleChange}
+          className={className}
+          style={{
+            width: "auto",
+            height: "auto",
+            backgroundColor: checked ? "#2196F3" : "transparent",
+            color: checked ? "white" : "#8B8B8B",
+            fontSize: checked ? "14px" : "14px",
+          }}
+        />
+      </div>
+    );
+  }
+  
+  function Language({ id, onLabel, offLabel, onIcon, offIcon, className }) {
+    const [checked, setChecked] = useState(false);
+  
+    const handleChange = (e) => {
+      setChecked(e.value);
+    };
+  
+    return (
+      <div className="post_btnHover">
+        <ToggleButton
+          id={id}
+          onLabel={onLabel}
+          offLabel={offLabel}
+          onIcon={onIcon}
+          offIcon={offIcon}
+          checked={checked}
+          onChange={handleChange}
+          className={className}
+          style={{
+            width: "auto",
+            height: "auto",
+            backgroundColor: checked ? "#2196F3" : "transparent",
+            color: checked ? "white" : "#8B8B8B",
+            fontSize: checked ? "14px" : "14px",
+          }}
+        />
+      </div>
+    );
+  }
+  
+  function Bonus({ id, onLabel, offLabel, onIcon, offIcon, className }) {
+    const [checked, setChecked] = useState(false);
+  
+    const handleChange = (e) => {
+      setChecked(e.value);
+    };
+  
+    return (
+      <div className="post_btnHover">
+        <ToggleButton
+          id={id}
+          onLabel={onLabel}
+          offLabel={offLabel}
+          onIcon={onIcon}
+          offIcon={offIcon}
+          checked={checked}
+          onChange={handleChange}
+          className={className}
+          style={{
+            width: "auto",
+            height: "auto",
+            backgroundColor: checked ? "#2196F3" : "transparent",
+            color: checked ? "white" : "#8B8B8B",
+            fontSize: checked ? "14px" : "14px",
+          }}
+        />
+      </div>
+    );
+  }
+  
+  function Candidates({ id, onLabel, offLabel, onIcon, offIcon, className }) {
+    const [checked, setChecked] = useState(false);
+  
+    const handleChange = (e) => {
+      setChecked(e.value);
+    };
+  
+    return (
+      <div className="post_btnHover">
+        <ToggleButton
+          id={id}
+          onLabel={onLabel}
+          offLabel={offLabel}
+          onIcon={onIcon}
+          offIcon={offIcon}
+          checked={checked}
+          onChange={handleChange}
+          className={className}
+          style={{
+            width: "auto",
+            height: "auto",
+            backgroundColor: checked ? "#2196F3" : "transparent",
+            color: checked ? "white" : "#8B8B8B",
+            fontSize: checked ? "14px" : "14px",
+          }}
+        />
+      </div>
+    );
+  }
+ 
+  return (
+    <div>
+         <div className="post_stepCard">
+                    <h1 className="post_aboutthepost">
+                      Candidate Requirements
+                    </h1>
+
+                    <h3 className="post_aboutHeading">
+                      Candidate Minimum Qualification
+                    </h3>
+
+                    <div className="post_canReq post_aboutPad">
+                      <Candidate
+                        id="toggleButton1"
+                        onLabel="Below 10th Grade"
+                        offLabel="Below 10th Grade"
+                        onIcon="pi pi-check"
+                        offIcon="pi pi-plus"
+                                  />
+
+                      <Candidate
+                        id="toggleButton2"
+                        onLabel="10th / 12th Grade"
+                        offLabel="10th / 12th Grade"
+                        onIcon="pi pi-check"
+                        offIcon="pi pi-plus"
+                                  />
+
+                      <Candidate
+                        id="toggleButton3"
+                        onLabel="Under Graduate"
+                        offLabel="Under Graduate"
+                        onIcon="pi pi-check"
+                        offIcon="pi pi-plus"
+                                  />
+
+                      <Candidate
+                        id="toggleButton4"
+                        onLabel="Post Graduate"
+                        offLabel="Post Graduate"
+                        onIcon="pi pi-check"
+                        offIcon="pi pi-plus"
+                                  />
+
+                      <Candidate
+                        id="toggleButton5"
+                        onLabel="Diploma"
+                        offLabel="Diploma"
+                        onIcon="pi pi-check"
+                        offIcon="pi pi-plus"
+                                  />
+
+                      <Candidate
+                        id="toggleButton6"
+                        onLabel="ITI"
+                        offLabel="ITI"
+                        onIcon="pi pi-check"
+                        offIcon="pi pi-plus"
+                                  />
+
+                      <Candidate
+                        id="toggleButton7"
+                        onLabel="Skilled labour"
+                        offLabel="Skilled labour"
+                        onIcon="pi pi-check"
+                        offIcon="pi pi-plus"
+                                  />
+
+                      <Candidate
+                        id="toggleButton8"
+                        onLabel="Unskilled labour"
+                        offLabel="Unskilled labour"
+                        onIcon="pi pi-check"
+                        offIcon="pi pi-plus"
+                                  />
+                    </div>
+
+                    <h3 className="post_aboutHeading">Degree Specialization</h3>
+                    <div className="post_aboutPad">
+                      <div>
+                        <span>
+                          <InputText
+                            placeholder="Add required degree specialization"
+                            className="post_textSize"
+                          />
+                        </span>
+                      </div>
+                    </div>
+
+                    <h3 className="post_aboutHeading">
+                      Specify Certifications If any required{" "}
+                      <span style={{ color: "#BBB9B9" }}>(Optional) </span>
+                    </h3>
+                    <div className="post_aboutPad">
+                      <div>
+                        <span>
+                          <InputText
+                            placeholder="Add certifications "
+                            className="post_textSize"
+                          />
+                        </span>
+                      </div>
+                    </div>
+
+                    <h3 className="post_aboutHeading">Preferred Skills</h3>
+
+                    <div className="post_preSkills post_aboutPad">
+                      <PreferredSkils
+                        id="toggleButton1"
+                        onLabel="Computer Knowledge"
+                        offLabel="Computer Knowledge"
+                        onIcon="pi pi-check"
+                        offIcon="pi pi-plus"
+                                  />
+                      <PreferredSkils
+                        id="toggleButton2"
+                        onLabel="Telecalling"
+                        offLabel="Telecalling"
+                        onIcon="pi pi-check"
+                        offIcon="pi pi-plus"
+                                  />
+                      <PreferredSkils
+                        id="toggleButton3"
+                        onLabel="Four Wheeler Driving"
+                        offLabel="Four Wheeler Driving"
+                        onIcon="pi pi-check"
+                        offIcon="pi pi-plus"
+                                  />
+
+                      <div
+                        style={{
+                          display: "flex",
+                          flexDirection: "row",
+                          alignItems: "center",
+                          justifyContent: "center",
+                        }}
+                      >
+                        <h3
+                          style={{
+                            fontSize: "12px",
+                            color: "#2196F3",
+                            // marginRight: "20px",
+                          }}
+                        >
+                          <img
+                            src={Add}
+                            alt="add button"
+                            style={{
+                              width: "20px",
+                              height: "20px",
+                              // marginRight: "5px",
+                            }}
+                          />
+                          Add Key Skills
+                        </h3>
+                      </div>
+
+                      <div
+                        style={{
+                          position: "relative",
+                          display: "inline-block",
+                        }}
+                      >
+                        <input
+                          type="text"
+                          placeholder="Eg. MS Excel"
+                          style={{
+                            // marginRight: "30px",
+                            width: "220px",
+                            height: "42px",
+                            padding: "0 10px", // Adjust padding as needed
+                            fontSize: "14px",
+                            border: "1px solid #2196F3",
+                            borderRadius: "5px",
+                          }}
+                        />
+                        <div
+                          style={{
+                            position: "absolute",
+                            top: "50%",
+                            right: "40px",
+                            transform: "translateY(-50%)",
+                            display: "flex",
+                            alignItems: "center",
+                          }}
+                        >
+                          <span style={{ marginRight: "5px" }}>
+                            <AddIcon />
+                          </span>
+                          <span style={{ fontSize: "14px", color: "black" }}>
+                            Add
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <h3 className="post_aboutHeading">Preferred Gender</h3>
+
+                    <div className="post_aboutPart post_aboutPad">
+                      <Gender
+                        id="toggleButton1"
+                        onLabel="Male"
+                        offLabel="Male"
+                        onIcon="pi pi-check"
+                        offIcon="pi pi-plus"
+                                  />
+                      <Gender
+                        id="toggleButton2"
+                        onLabel="Female"
+                        offLabel="Female"
+                        onIcon="pi pi-check"
+                        offIcon="pi pi-plus"
+                                  />
+                      <Gender
+                        id="toggleButton3"
+                        onLabel="Others"
+                        offLabel="Others"
+                        onIcon="pi pi-check"
+                        offIcon="pi pi-plus"
+                                  />
+
+                      <Gender
+                        id="toggleButton4"
+                        onLabel="Any Gender"
+                        offLabel="Any Gender"
+                        onIcon="pi pi-check"
+                        offIcon="pi pi-plus"
+                                  />
+                    </div>
+
+                    <h3 className="post_aboutHeading">Required Experience</h3>
+
+                    <div className="post_aboutPart post_aboutPad post_canReqExp">
+                      <InputText
+                        placeholder="Enter Min experience - eg. 01"
+                        className="post_CanPlaceholder"
+                      />
+                      <p className="post_canPara">to</p>
+
+                      <InputText
+                        placeholder="Enter Min experience - eg. 01"
+                        className="post_CanPlaceholder"
+                      />
+                    </div>
+
+                    <h3 className="post_aboutHeading">Language Preferences</h3>
+
+                    <div className="post_aboutPart post_aboutPad post_lanPad">
+                      <div className="post_canlan">
+                        <p className="post_CanLanPara">Language</p>
+                        <Language
+                          id="toggleButton1"
+                          onLabel="English"
+                          offLabel="English"
+                          onIcon="pi pi-check"
+                          offIcon="pi pi-plus"
+                          className="ToggleButtonGroupLanguage"
+                        />
+                      </div>
+
+                      <div className="post_CanLanStatus">
+                        <p className="post_CanLanPara post_sts">Status</p>
+
+                        <div className="post_CanLvl">
+                          <div className="post_Canlevel">
+                            <Checkbox {...label}  />
+                            <p>Basic</p>
+                          </div>
+                          <div className="post_Canlevel">
+                            <Checkbox {...label}  />
+                            <p>Intermediate</p>
+                          </div>
+                          <div className="post_Canlevel">
+                            <Checkbox {...label}  />
+                            <p>Excellence</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="post_CanLanStatus">
+                        <p className="post_CanLanPara post_sts">Level</p>
+
+                        <div className="post_CanLvl">
+                          <div className="post_Canlevel">
+                            <Checkbox {...label}  />
+                            <p>Read</p>
+                          </div>
+                          <div className="post_Canlevel">
+                            <Checkbox {...label}  />
+                            <p>Write</p>
+                          </div>
+                          <div className="post_Canlevel">
+                            <Checkbox {...label}  />
+                            <p>Speak</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <h3 className="post_aboutHeading">
+                      Willing to hire candidates within
+                    </h3>
+
+                    <div className="post_aboutPart post_aboutPad">
+                      <Candidates
+                        id="toggleButton1"
+                        onLabel="Nearby areas (Upto 10Km)"
+                        offLabel="Nearby areas (Upto 10Km)"
+                        onIcon="pi pi-check"
+                        offIcon="pi pi-plus"
+                                  />
+                      <Candidates
+                        id="toggleButton2"
+                        onLabel="Anywhere in the City to commute"
+                        offLabel="Anywhere in the City to commute"
+                        onIcon="pi pi-check"
+                        offIcon="pi pi-plus"
+                                  />
+
+                      <div
+                        style={{
+                          display: "flex",
+                          flexDirection: "row",
+                          alignItems: "center",
+                        }}
+                      >
+                        <h3
+                          style={{
+                            fontSize: "12px",
+                            color: "#2196F3",
+                            marginRight: "20px",
+                          }}
+                        >
+                          <img
+                            src={Add}
+                            alt="add button"
+                            style={{
+                              width: "20px",
+                              height: "20px",
+                              marginRight: "5px",
+                            }}
+                          />
+                          Add Key Skills
+                        </h3>
+                      </div>
+                    </div>
+
+                    <h3 className="post_aboutHeading">
+                      Do you offer bonus in addition to Monthly Salary{" "}
+                    </h3>
+
+                    <FormControl>
+                      <RadioGroup
+                        className="post_aboutPad"
+                        row
+                        aria-labelledby="demo-row-radio-buttons-group-label"
+                        name="row-radio-buttons-group"
+                      >
+                        <FormControlLabel
+                          value="Yes"
+                          control={<Radio />}
+                          label="Yes"
+                        />
+                        <FormControlLabel
+                          value="No"
+                          control={<Radio />}
+                          label="No"
+                        />
+                      </RadioGroup>
+                    </FormControl>
+
+                    <h3 className="post_aboutHeading">Bonus Type</h3>
+
+                    <div className="post_aboutPad post_yesNo">
+                      <Bonus
+                        id="toggleButton1"
+                        onLabel="Performance bonus"
+                        offLabel="Performance bonus"
+                        onIcon="pi pi-check"
+                        offIcon="pi pi-plus"
+                                  />
+
+                      <Bonus
+                        id="toggleButton2"
+                        onLabel="Meal allowance"
+                        offLabel="Meal allowance"
+                        onIcon="pi pi-check"
+                        offIcon="pi pi-plus"
+                                  />
+
+                      <Bonus
+                        id="toggleButton3"
+                        onLabel="Transportation allowance"
+                        offLabel="Transportation allowance"
+                        onIcon="pi pi-check"
+                        offIcon="pi pi-plus"
+                                  />
+
+                      <Bonus
+                        id="toggleButton4"
+                        onLabel="Stock purchase plan"
+                        offLabel="Stock purchase plan"
+                        onIcon="pi pi-check"
+                        offIcon="pi pi-plus"
+                                  />
+
+                      <Bonus
+                        id="toggleButton5"
+                        onLabel="Hourly Pay"
+                        offLabel="Hourly Pay"
+                        onIcon="pi pi-check"
+                        offIcon="pi pi-plus"
+                                  />
+
+                      <Bonus
+                        id="toggleButton6"
+                        onLabel="Housing allowance"
+                        offLabel="Housing allowance"
+                        onIcon="pi pi-check"
+                        offIcon="pi pi-plus"
+                                  />
+
+                      <Bonus
+                        id="toggleButton7"
+                        onLabel="Educational allowance"
+                        offLabel="Educational allowance"
+                        onIcon="pi pi-check"
+                        offIcon="pi pi-plus"
+                                  />
+
+                      <Bonus
+                        id="toggleButton8"
+                        onLabel="Life Insurance"
+                        offLabel="Life Insurance"
+                        onIcon="pi pi-check"
+                        offIcon="pi pi-plus"
+                                  />
+
+                      <Bonus
+                        id="toggleButton9"
+                        onLabel="Disability Insurance "
+                        offLabel="Disability Insurance "
+                        onIcon="pi pi-check"
+                        offIcon="pi pi-plus"
+                                  />
+
+                      <Bonus
+                        id="toggleButton10"
+                        onLabel="Overtime Pay "
+                        offLabel="Overtime Pay "
+                        onIcon="pi pi-check"
+                        offIcon="pi pi-plus"
+                                  />
+                      <Bonus
+                        id="toggleButton11"
+                        onLabel="Professional Development assistance "
+                        offLabel="Professional Development assistance "
+                        onIcon="pi pi-check"
+                        offIcon="pi pi-plus"
+                                  />
+                      <Bonus
+                        id="toggleButton12"
+                        onLabel="Profit sharing "
+                        offLabel="Profit sharing "
+                        onIcon="pi pi-check"
+                        offIcon="pi pi-plus"
+                                  />
+                      <Bonus
+                        id="toggleButton13"
+                        onLabel="Parental  Leave "
+                        offLabel="Parental  Leave "
+                        onIcon="pi pi-check"
+                        offIcon="pi pi-plus"
+                                  />
+                      <Bonus
+                        id="toggleButton14"
+                        onLabel="Rewards "
+                        offLabel="Rewards "
+                        onIcon="pi pi-check"
+                        offIcon="pi pi-plus"
+                                  />
+                      <Bonus
+                        id="toggleButton15"
+                        onLabel="Flexible Schedule  "
+                        offLabel="Flexible Schedule  "
+                        onIcon="pi pi-check"
+                        offIcon="pi pi-plus"
+                                  />
+                      <Bonus
+                        id="toggleButton16"
+                        onLabel="Relocation assistance "
+                        offLabel="Relocation assistance "
+                        onIcon="pi pi-check"
+                        offIcon="pi pi-plus"
+                                  />
+                      <Bonus
+                        id="toggleButton17"
+                        onLabel="Retirement Plan "
+                        offLabel="Retirement Plan "
+                        onIcon="pi pi-check"
+                        offIcon="pi pi-plus"
+                                  />
+                      <Bonus
+                        id="toggleButton18"
+                        onLabel="401(K) or Retirement savings Plan  "
+                        offLabel="401(K) or Retirement savings Plan  "
+                        onIcon="pi pi-check"
+                        offIcon="pi pi-plus"
+                                  />
+                      <Bonus
+                        id="toggleButton19"
+                        onLabel="Double Time Pay "
+                        offLabel="Double Time Pay "
+                        onIcon="pi pi-check"
+                        offIcon="pi pi-plus"
+                                  />
+                      <Bonus
+                        id="toggleButton20"
+                        onLabel="Monthly bonus "
+                        offLabel="Monthly bonus "
+                        onIcon="pi pi-check"
+                        offIcon="pi pi-plus"
+                                  />
+                      <Bonus
+                        id="toggleButton21"
+                        onLabel="Quarterly bonus "
+                        offLabel="Quarterly bonus "
+                        onIcon="pi pi-check"
+                        offIcon="pi pi-plus"
+                                  />
+                      <Bonus
+                        id="toggleButton22"
+                        onLabel="Commission "
+                        offLabel="Commission "
+                        onIcon="pi pi-check"
+                        offIcon="pi pi-plus"
+                                  />
+                      <Bonus
+                        id="toggleButton23"
+                        onLabel="Yearly bonus "
+                        offLabel="Yearly bonus "
+                        onIcon="pi pi-check"
+                        offIcon="pi pi-plus"
+                                  />
+                      <Bonus
+                        id="toggleButton24"
+                        onLabel="Other "
+                        offLabel="Other "
+                        onIcon="pi pi-check"
+                        offIcon="pi pi-plus"
+                                  />
+                    </div>
+
+                    <h3 className="post_aboutHeading">Candidate age</h3>
+
+                    <div className="post_aboutPart post_aboutPad post_canReqExp">
+                      <InputText
+                        placeholder="Enter Min age - eg. 25"
+                        className="post_CanPlaceholder"
+                      />
+                      <p className="post_canPara">to</p>
+
+                      <InputText
+                        placeholder="Enter Max age - eg. 30"
+                        className="post_CanPlaceholder"
+                      />
+                    </div>
+
+                    <div className="post_aboutPart post_aboutPad post_canReqExp post_abtPad">
+                      <Checkbox
+                        {...label}
+                        
+                        className="post_canchec"
+                      />
+                      <p className="post_canUpd">Directing candidates to upload their photo</p>
+                    </div>
+
+                    <div className="post_aboutPart post_aboutPad post_canReqExp">
+                      <Checkbox
+                        {...label}
+                        
+                        className="post_canchec"
+                      />
+                      <p className="post_canUpd">This Job Requires resume to apply </p>
+                    </div>
+                  </div>
+    </div>
+  )
+}
+
+export default JobPostStep2
+
+JobPostStep3
+
+import React, { useState, useEffect } from "react";
+import "./jobposting.css";
+import kodukkuLogo from "../../assets/images/klogo.svg";
+import { Link } from "react-router-dom";
+import Switch from "@mui/material/Switch";
+import Box from "@mui/material/Box";
+import Stepper from "@mui/material/Stepper";
+import Step from "@mui/material/Step";
+import StepLabel from "@mui/material/StepLabel";
+import Button from "@mui/material/Button";
+import Typography from "@mui/material/Typography";
+import { Select, StepConnector } from "@mui/material";
+import { withStyles } from "@mui/styles";
+import { ThemeProvider, createTheme } from "@mui/material/styles";
+import MenuItem from "@mui/material/MenuItem";
+import Add from "../../assets/images/add.png";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import { styled, alpha } from "@mui/material/styles";
+import Menu from "@mui/material/Menu";
+import { InputText } from "primereact/inputtext";
+import { ToggleButton } from "primereact/togglebutton";
+import Checkbox from "@mui/material/Checkbox";
+
+import EastIcon from "@mui/icons-material/East";
+import AddIcon from "@mui/icons-material/Add";
+import Radio from "@mui/material/Radio";
+import RadioGroup from "@mui/material/RadioGroup";
+import FormControlLabel from "@mui/material/FormControlLabel";
+import FormControl from "@mui/material/FormControl";
+import Modal from "@mui/material/Modal";
+import Scuccess from "../../assets/images/success.png";
+import CloseIcon from "@mui/icons-material/Close";
+import PostLocation from "../../assets/images/postLocation.svg";
+
+const JobPostStep3 = () => {
+   
+  function Hire({ id, onLabel, offLabel, onIcon, offIcon, className }) {
+    const [checked, setChecked] = useState(false);
+  
+    const handleChange = (e) => {
+      setChecked(e.value);
+    };
+  
+    return (
+      <div className="post_btnHover">
+        <ToggleButton
+          id={id}
+          onLabel={onLabel}
+          offLabel={offLabel}
+          onIcon={onIcon}
+          offIcon={offIcon}
+          checked={checked}
+          onChange={handleChange}
+          className={className}
+          style={{
+            width: "auto",
+            height: "auto",
+            backgroundColor: checked ? "#2196F3" : "transparent",
+            color: checked ? "white" : "#8B8B8B",
+            fontSize: checked ? "14px" : "14px",
+          }}
+        />
+      </div>
+    );
+  }
+  
+  function Communication({ id, onLabel, offLabel, onIcon, offIcon, className }) {
+    const [checked, setChecked] = useState(false);
+  
+    const handleChange = (e) => {
+      setChecked(e.value);
+    };
+  
+    return (
+      <div className="post_btnHover">
+        <ToggleButton
+          id={id}
+          onLabel={onLabel}
+          offLabel={offLabel}
+          onIcon={onIcon}
+          offIcon={offIcon}
+          checked={checked}
+          onChange={handleChange}
+          className={className}
+          style={{
+            width: "auto",
+            height: "auto",
+            backgroundColor: checked ? "#2196F3" : "transparent",
+            color: checked ? "white" : "#8B8B8B",
+            fontSize: checked ? "14px" : "14px",
+          }}
+        />
+      </div>
+    );
+  }
+  return (
+    <div>
+         <div className="post_stepCard">
+                    <h1 className="post_aboutthepost">About Company</h1>
+
+                    <h3
+                      style={{
+                        fontSize: "16px",
+                        color: "#4A4A4A",
+                        marginBottom: "10px",
+                        marginTop: "20px",
+                      }}
+                    >
+                      Company / Consultancy Name
+                    </h3>
+                    <div>
+                      <div>
+                        <span className="">
+                          <InputText
+                            placeholder="Add Company name"
+                            className="post_textSize"
+                          />
+                        </span>
+                      </div>
+                    </div>
+
+                    <h3
+                      style={{
+                        fontSize: "16px",
+                        color: "#4A4A4A",
+                        marginBottom: "10px",
+                        marginTop: "20px",
+                      }}
+                    >
+                      Company / Consultancy Logo
+                    </h3>
+                    <div>
+                      <div>
+                        <span className="p-input-icon-right">
+                          <i
+                            className="pi pi-upload"
+                            style={{ color: "#2196F3" }}
+                          />
+                          <InputText
+                            placeholder="Upload Company logo"
+                            className="post_textSize"
+                          />
+                        </span>
+                      </div>
+                    </div>
+
+                    <h3
+                      style={{
+                        fontSize: "16px",
+                        color: "#4A4A4A",
+                        marginBottom: "10px",
+                        marginTop: "20px",
+                      }}
+                    >
+                      Company / Consultancy URL
+                    </h3>
+                    <div>
+                      <div>
+                        <span className="">
+                          <InputText
+                            placeholder="Add company URL"
+                            className="post_textSize"
+                          />
+                        </span>
+                      </div>
+                    </div>
+
+                    <h3
+                      style={{
+                        fontSize: "16px",
+                        color: "#4A4A4A",
+                        marginBottom: "10px",
+                        marginTop: "20px",
+                      }}
+                    >
+                      Company Headquarters / Consultancy Address
+                    </h3>
+                    <div>
+                      <div>
+                        <span className="">
+                          <InputText
+                            placeholder="Add company address and mention the Landmark near your office"
+                            style={{ width: "920px", height: "85px" }}
+                          />
+                        </span>
+                      </div>
+                    </div>
+
+                    <h3
+                      style={{
+                        fontSize: "16px",
+                        color: "#4A4A4A",
+                        marginBottom: "10px",
+                        marginTop: "20px",
+                      }}
+                    >
+                      Company / Consultancy Overview
+                    </h3>
+                    <div>
+                      <div>
+                        <span className="">
+                          <InputText
+                            placeholder="Add an Overview about your company in detail"
+                            style={{ width: "920px", height: "106px" }}
+                          />
+                        </span>
+                      </div>
+                    </div>
+
+                    <h3
+                      style={{
+                        fontSize: "16px",
+                        color: "#4A4A4A",
+                        marginBottom: "10px",
+                        marginTop: "20px",
+                      }}
+                    >
+                      Recruiter Name
+                    </h3>
+                    <div>
+                      <div>
+                        <span className="">
+                          <InputText
+                            placeholder="Add Recruiter name / designation"
+                            className="post_textSize"
+                          />
+                        </span>
+                      </div>
+                    </div>
+
+                    <h3
+                      style={{
+                        fontSize: "16px",
+                        color: "#4A4A4A",
+                        marginBottom: "10px",
+                        marginTop: "20px",
+                      }}
+                    >
+                      Recruiter Contact Number
+                    </h3>
+                    <div>
+                      <div>
+                        <span className="">
+                          <InputText
+                            placeholder="Add Recruiter name"
+                            className="post_textSize"
+                          />
+                        </span>
+                      </div>
+                    </div>
+
+                    <h3
+                      style={{
+                        fontSize: "16px",
+                        color: "#4A4A4A",
+                        marginBottom: "10px",
+                        marginTop: "20px",
+                      }}
+                    >
+                      Upload an Official Business document
+                    </h3>
+                    <div>
+                      <div>
+                        <span className="p-input-icon-right">
+                          <i
+                            className="pi pi-upload"
+                            style={{ color: "#2196F3" }}
+                          />
+                          <textarea
+                            placeholder="Provide a scan, image, or electronic copy of an acceptable document,such as articles of incorporation,
+                            business license or Company liability insurance"
+                            style={{
+                              width: "920px",
+                              height: "67px",
+                              resize: "none",
+                              padding: "5px",
+                              borderRadius: "10px",
+                            }}
+                          />
+                        </span>
+                      </div>
+                    </div>
+
+                    <h3
+                      style={{
+                        fontSize: "16px",
+                        color: "#4A4A4A",
+                        marginBottom: "10px",
+                        marginTop: "20px",
+                      }}
+                    >
+                      Communication Preferences
+                    </h3>
+                    <p style={{ color: "#8B8B8B" }}>
+                      Allow candidates to Communicate through
+                    </p>
+
+                    <div className="post_aboutPart">
+                      <Communication
+                        id="toggleButton1"
+                        onLabel="Call"
+                        offLabel="Call"
+                        onIcon="pi pi-check"
+                        offIcon="pi pi-plus"
+                                  />
+                      <Communication
+                        id="toggleButton2"
+                        onLabel="Email"
+                        offLabel="Email"
+                        onIcon="pi pi-check"
+                        offIcon="pi pi-plus"
+                                  />
+                      <Communication
+                        id="toggleButton3"
+                        onLabel="Message"
+                        offLabel="Message"
+                        onIcon="pi pi-check"
+                        offIcon="pi pi-plus"
+                                  />
+                    </div>
+
+                    <div style={{ marginTop: "20px", marginBottom: "20px" }}>
+                      <div>
+                        <span className="">
+                          <InputText
+                            placeholder="Add Phone Number to communicate"
+                            className="post_textSize"
+                          />
+                        </span>
+                      </div>
+                    </div>
+
+                    <div>
+                      <div style={{ marginTop: "20px", marginBottom: "20px" }}>
+                        <span className="">
+                          <InputText
+                            placeholder="Add email ID to send daily updates"
+                            className="post_textSize"
+                          />
+                        </span>
+                      </div>
+                    </div>
+
+                    <div>
+                      <h3
+                        style={{
+                          fontSize: "12px",
+                          color: "#2196F3",
+                          marginRight: "20px",
+                        }}
+                      >
+                        <img
+                          src={Add}
+                          alt="add button"
+                          style={{
+                            width: "20px",
+                            height: "20px",
+                            marginRight: "5px",
+                          }}
+                        />
+                        Add Key Skills
+                      </h3>
+                    </div>
+
+                    <h3
+                      style={{
+                        fontSize: "16px",
+                        color: "#4A4A4A",
+                        marginBottom: "10px",
+                        marginTop: "20px",
+                      }}
+                    >
+                      Willing to hire candidates within
+                    </h3>
+
+                    <div className="post_aboutPart">
+                      <Hire
+                        id="toggleButton1"
+                        onLabel="1 to 3 days"
+                        offLabel="1 to 3 days"
+                        onIcon="pi pi-check"
+                        offIcon="pi pi-plus"
+                                  />
+                      <Hire
+                        id="toggleButton2"
+                        onLabel="1 Week"
+                        offLabel="1 Week"
+                        onIcon="pi pi-check"
+                        offIcon="pi pi-plus"
+                                  />
+                      <Hire
+                        id="toggleButton3"
+                        onLabel="2 Weeks"
+                        offLabel="2 Weeks"
+                        onIcon="pi pi-check"
+                        offIcon="pi pi-plus"
+                                  />
+
+                      <Hire
+                        id="toggleButton4"
+                        onLabel="3 Weeks"
+                        offLabel="3 Weeks"
+                        onIcon="pi pi-check"
+                        offIcon="pi pi-plus"
+                                  />
+
+                      <Hire
+                        id="toggleButton4"
+                        onLabel="1 Month"
+                        offLabel="1 Month"
+                        onIcon="pi pi-check"
+                        offIcon="pi pi-plus"
+                                  />
+
+                      <div
+                        style={{
+                          display: "flex",
+                          flexDirection: "row",
+                          alignItems: "center",
+                          justifyContent: "center",
+                        }}
+                      >
+                        <h3
+                          style={{
+                            fontSize: "12px",
+                            color: "#2196F3",
+                            marginRight: "20px",
+                          }}
+                        >
+                          <img
+                            src={Add}
+                            alt="add button"
+                            style={{
+                              width: "20px",
+                              height: "20px",
+                              marginRight: "5px",
+                            }}
+                          />
+                          Add Key Skills
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+    </div>
+  )
+}
+
+export default JobPostStep3
+
+
+
+
+
+
+
+// import React, { useState } from "react";
+// import "./jobposting.css";
+// import kodukkuLogo from "../../assets/images/klogo.svg";
+// import { Link } from "react-router-dom";
+// // import Switch from "@mui/material/Switch";
+// import Box from "@mui/material/Box";
+// import Stepper from "@mui/material/Stepper";
+// import Step from "@mui/material/Step";
+// import StepLabel from "@mui/material/StepLabel";
+// import Button from "@mui/material/Button";
+// import Typography from "@mui/material/Typography";
+// import { StepConnector } from "@mui/material";
+// import { withStyles } from "@mui/styles";
+// import { ThemeProvider, createTheme } from "@mui/material/styles";
+// import EastIcon from "@mui/icons-material/East";
+// import Modal from "@mui/material/Modal";
+// import Scuccess from "../../assets/images/success.png";
+// import CloseIcon from "@mui/icons-material/Close";
+// import JobPostStep2 from "../../Component/Profile/JobPost/JobPostStep1";
+// import JobPostStep3 from "../../Component/Profile/JobPost/JobPostStep1";
+// import JobPostStep1 from "../../Component/Profile/JobPost/JobPostStep1";
+
+// const label = { inputProps: { "aria-label": "Checkbox demo" } };
+// const styleConfirmJob = {
+//   position: "absolute",
+//   top: "50%",
+//   left: "50%",
+//   transform: "translate(-50%, -50%)",
+//   bgcolor: "background.paper",
+//   boxShadow: 24,
+//   width: 1290,
+//   height: 479,
+//   p: 4,
+//   display: "flex",
+//   justifyContent: "center",
+//   alignItems: "center",
+//   flexDirection: "column",
+// };
+
+// const ColorStepConnector = withStyles({
+//   alternativeLabel: {
+//     top: 10,
+//     left: "calc(-50% + 12px)",
+//     right: "calc(50% + 12px)",
+//   },
+//   active: {
+//     "& $line": {
+//       borderColor: "#68BCFF", // Change this color to your desired color
+//     },
+//   },
+//   completed: {
+//     "& $line": {
+//       borderColor: "#68BCFF", // Change this color to your desired color
+//     },
+//   },
+//   line: {
+//     borderColor: "#eaeaf0",
+//     borderTopWidth: 3,
+//     borderRadius: 1,
+//   },
+// })(StepConnector);
+
+// // Define custom theme for StepIcon
+// const theme = createTheme({
+//   components: {
+//     MuiStepIcon: {
+//       styleOverrides: {
+//         root: {
+//           color: "#2196F3", // Change this color to your desired color
+//         },
+//         active: {
+//           color: "#2196F3", // Change this color to your desired color
+//         },
+//       },
+//     },
+//   },
+// });
+
+// const JobPosting = () => {
+//   const [activeButton, setActiveButton] = useState("seeking");
+
+//   const handleToggle = (button) => {
+//     setActiveButton(button);
+//   };
+
+//   const steps = ["Job details", "Candidate requirements ", "Company Details"];
+//   const [activeStep, setActiveStep] = useState(0);
+//   const [isModalOpen, setIsModalOpen] = useState(false);
+
+//   const handleNext = () => {
+//     if (activeStep === steps.length - 1) {
+//       setIsModalOpen(true);
+//     } else {
+//       setActiveStep((prevActiveStep) => prevActiveStep + 1);
+//     }
+//   };
+
+//   const handleBack = () => {
+//     setActiveStep((prevActiveStep) => prevActiveStep - 1);
+//   };
+
+//   const handleCloseModal = () => {
+//     setIsModalOpen(false);
+//   };
+
+//   return (
+//     <div className="MainjobPostMainContainer">
+//       <div className="jobPostMainContainer">
+//         <div className="headerJobPost">
+//           <div className="post_logoHead">
+//             <img src={kodukkuLogo} alt="logo" />
+//           </div>
+
+//           <div>
+//             <button
+//               className="job_seekpost"
+//               style={{
+//                 backgroundColor:
+//                   activeButton === "seeking" ? "#2196F3" : "inherit",
+//                 color: activeButton === "seeking" ? "white" : "inherit",
+//               }}
+//               onClick={() => handleToggle("seeking")}
+//             >
+//               <Link
+//                 style={{
+//                   textDecoration: "none",
+//                   color: activeButton === "seeking" ? "white" : "#2196F3",
+//                 }}
+//                 to="/main/joblisting"
+//               >
+//                 Job Seeking
+//               </Link>
+//             </button>
+//             <button
+//               className="job_seekpost"
+//               style={{
+//                 backgroundColor:
+//                   activeButton === "posting" ? "#2196F3" : "inherit",
+//                 color: activeButton === "posting" ? "white" : "inherit",
+//               }}
+//               onClick={() => handleToggle("posting")}
+//             >
+//               <Link style={{ textDecoration: "none" }} to="/main/jobPosting">
+//                 Job Posting
+//               </Link>
+//             </button>
+//           </div>
+//         </div>
+
+//         <div className="switchcontainer1">
+//           <div className="post_breadCont">
+//             <div className="switchcontainer1mini">
+//               {" "}
+//               <p className="post_breadcrums">Home</p>
+//              
+ <img src={ArrowIcon} 
+ className="jobArrow" alt="" />
+
+//             </div>
+
+//             <div className="switchcontainer1mini">
+//               {" "}
+//               <p className="post_breadcrums"
+>
+//                 Categories
+//               </p>
+//              
+ <img src={ArrowIcon} 
+ className="jobArrow" alt="" />
+
+//             </div>
+
+//             <div className="switchcontainer1mini">
+//               {" "}
+//               <p className="post_breadcrums">Job Posting</p>
+//              
+ <img src={ArrowIcon} 
+ className="jobArrow" alt="" />
+
+//             </div>
+
+//             <div className="switchcontainer1mini">
+//               {" "}
+//               <p className="post_breadcrums"
+>
+//                 Job details{" "}
+//               </p>
+//              
+ <img src={ArrowIcon} 
+ className="jobArrow" alt="" />
+
+//             </div>
+//           </div>
+
+//           <div className="switchcontainer1mini">
+//             {" "}
+//             <p className="post_breadcrums"
+>
+//               Send job alert for this search
+//             </p>
+//             <Switch {...label}  />
+//           </div>
+//         </div>
+
+//         <div className="post_stepper">
+//           <Stepper
+//             activeStep={activeStep}
+//             alternativeLabel
+//             connector={<ColorStepConnector />}
+//           >
+//             {steps.map((label, index) => {
+//               // const isFirstStep = index === 0;
+
+//               return (
+//                 <Step key={label} sx={{ marginTop: "50px" }}>
+//                   <StepLabel>{label}</StepLabel>
+//                 </Step>
+//               );
+//             })}
+//           </Stepper>
+//           <ThemeProvider theme={theme}>
+//             <Box>
+//               <div className="post_stepForm">
+//                 {activeStep === 0 && (
+                  
+//                     <JobPostStep1 />
+                
+//                 )}
+
+//                 {activeStep === 1 && (
+              
+//                     <JobPostStep2 />
+              
+//               )}
+
+//                 {activeStep === 2 && (
+                
+//                     <JobPostStep3 />
+        
+//                 )}
+//               </div>
+//               {/* Button and Modal */}
+//               <div className="post_bactBtn">
+//                 <Button
+//                   variant="contained"
+//                   disabled={activeStep === 0}
+//                   onClick={handleBack}
+//                 >
+//                   Back
+//                 </Button>
+
+//                 <Button onClick={handleNext} variant="contained">
+//                   {activeStep === steps.length - 1
+//                     ? "Confirm & Post the Job"
+//                     : "Continue"}
+
+//                   <EastIcon />
+//                 </Button>
+//               </div>
+
+//               {/* Modal */}
+//               <Modal
+//                 open={isModalOpen}
+//                 onClose={handleCloseModal}
+//                 aria-labelledby="modal-title"
+//                 aria-describedby="modal-description"
+//               >
+//                 <Box sx={styleConfirmJob}>
+//                   <CloseIcon
+//                     sx={{ position: "relative", left: "620px", top: "-60px" }}
+//                     onClick={handleCloseModal}
+//                   />
+//                   <img
+//                     src={Scuccess}
+//                     alt="close icon"
+//                     style={{
+//                       width: "100px",
+//                       height: "100px",
+//                       marginBottom: "20px",
+//                     }}
+//                   />
+
+//                   <Typography
+//                     id="modal-modal-title"
+//                     variant="h6"
+//                     component="h2"
+//                     sx={{ fontSize: "36px", marginBottom: "10px" }}
+//                   >
+//                     Your Job has been posted successfully
+//                   </Typography>
+//                   <Typography
+//                     id="modal-modal-description"
+//                     sx={{ fontSize: "20px", marginBottom: "10px", mt: 2 }}
+//                   >
+//                     Your Job will go live within 5 minutes{" "}
+//                   </Typography>
+
+//                   <div
+//                     style={{
+//                       display: "flex",
+//                       justifyContent: "space-evenly",
+//                       flexDirection: "row",
+//                       alignItems: "center",
+//                       marginTop: "20px",
+//                     }}
+//                   >
+//                     <Button variant="contained" sx={{ marginRight: "40px" }}>
+//                       Edit Job
+//                     </Button>
+
+//                     <Button variant="outlined"> See Posted jobs</Button>
+//                   </div>
+//                 </Box>
+//               </Modal>
+//             </Box>
+//           </ThemeProvider>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default JobPosting;

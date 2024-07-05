@@ -1,0 +1,1058 @@
+:root {
+  --primary-font-family: "Lato", sans-serif;
+  --secondary-font-family: "Lato", sans-serif;
+  --tertiary-font-family: "Lato", sans-serif;
+
+  --primary-font-size: 20px;
+  --secondary-font-size: 16px;
+  --tertiary-font-size: 12px;
+
+  --primary-font-weight: 500;
+  --secondary-font-weight: 500;
+  --tertiary-font-weight: 500;
+
+  --primary-line-height: 24px;
+  --secondary-line-height: 20px;
+  --tertiary-line-height: 16px;
+
+  --primary-letter-spacing: 0.25px;
+  --secondary-letter-spacing: 0.25px;
+  --tertiary-letter-spacing: 0.25px;
+
+  --primary-text-align: left;
+  --secondary-text-align: left;
+  --tertiary-text-align: left;
+
+  --primary-font-color: #2196f3;
+  --secondary-font-color: #4a4a4a;
+  --tertiary-font-color: #8b8b8b;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  width: fit-content;
+}
+
+.MainjobPostMainContainer {
+  background-color: #fafafa;
+}
+
+.headerJobPost {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  height: 140px;
+  background-color: white;
+  margin: 0px 70px 40px 150px;
+}
+
+.switchcontainer1 {
+  display: flex;
+  align-items: center;
+  margin: 0 70px 30px 150px;
+  justify-content: space-between;
+}
+
+.switchcontainer1mini {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+
+.css-1tkwz8a-MuiSvgIcon-root-MuiStepIcon-root.Mui-completed {
+  color: #07c271 !important;
+}
+
+.css-1tkwz8a-MuiSvgIcon-root-MuiStepIcon-root.Mui-active {
+  color: #2196f3;
+}
+
+.clickbar2Industry {
+  position: relative !important;
+  width: 920px;
+  height: 48px;
+  border: #bbb9b9 1px solid !important;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between !important;
+  align-items: center;
+  border-radius: 10px !important;
+  color: #bbb9b9 !important;
+  font-weight: 500;
+  font-size: 14px !important;
+  line-height: 1.75;
+  letter-spacing: 0 !important;
+  text-transform: none !important;
+}
+
+.input-with-placeholder {
+  vertical-align: top;
+  width: 920px;
+  height: 48px;
+}
+
+.p-button:focus {
+  box-shadow: none !important;
+}
+.p-button:hover {
+  background-color: #eff5fc !important;
+  color: #2196f3 !important;
+  border: 1px solid #68bcff !important;
+  box-shadow: 0 1px 1px 0 #dcdada !important;
+}
+.post_inpuTextSalary {
+  width: 200px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  text-align: left;
+  color: #bbb9b9;
+  padding: 8px 15px;
+  border: 1px solid #bbb9b9;
+  border-radius: 10px;
+}
+.post_salflex {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 17px;
+}
+.p-inputtext:enabled:hover {
+  border-color: #68bcff !important;
+}
+
+.post_toPara {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+  text-align: left;
+  color: #bbb9b9;
+}
+.custom-textarea-container {
+  width: 920px;
+}
+
+.custom-textarea {
+  width: 100%;
+  height: 200px;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 10px;
+}
+
+.custom-textarea::placeholder {
+  color: #999;
+  font-size: 14px;
+  padding: 10px;
+}
+
+.custom-textarea:enabled:focus {
+  border-color: #6366f1;
+}
+
+.custom-textarea:enabled:hover {
+  border-color: #6366f1;
+}
+.post_canReq {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: 14px;
+}
+.post_breadcrums {
+  font-size: 14px;
+  margin-bottom: 0;
+  color: #8b8b8b;
+}
+.post_breadCont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.post_stepper {
+  margin: 0 70px 0 150px;
+  padding-bottom: 66px;
+}
+.css-1hv8oq8-MuiStepLabel-label.MuiStepLabel-alternativeLabel {
+  margin-top: 16px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+}
+.css-1u4zpwo-MuiSvgIcon-root-MuiStepIcon-root.Mui-active {
+  color: #2196f3 !important;
+  /* fill: #fafafa !important; */
+}
+.css-1hv8oq8-MuiStepLabel-label.Mui-active {
+  font-weight: 500 !important;
+  color: #2196f3 !important;
+}
+
+.css-1u4zpwo-MuiSvgIcon-root-MuiStepIcon-root {
+  width: 32px !important;
+  height: 32px !important;
+  border-radius: 50% !important;
+}
+.css-10mg1vw-MuiStepper-root {
+  padding-bottom: 60px;
+}
+.post_stepCard {
+  padding: 78px 100px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  margin-bottom: 48px;
+}
+.post_iframe {
+  width: 920px;
+  height: 359px;
+  border: 0;
+  border-radius: 20px;
+}
+.post_detectLoc {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  text-align: left;
+  color: #2196f3;
+}
+
+.css-sghohy-MuiButtonBase-root-MuiButton-root {
+  padding: 10px 15px !important;
+  border-radius: 10px !important;
+  gap: 8px !important;
+  color: #ffffff !important;
+  background-color: #2196f3 !important;
+  font-size: 12px !important;
+}
+
+.css-i4bv87-MuiSvgIcon-root {
+  width: 18px !important;
+  height: 18px !important;
+}
+
+.post_bactBtn {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 90px;
+}
+.post_stepForm {
+  margin: 0 90px;
+}
+.post_aboutthepost {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  color: #2196f3;
+  padding-bottom: 32px;
+}
+.post_aboutHeading {
+  padding-bottom: 8px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.2px;
+  text-align: left;
+  color: #4a4a4a;
+}
+.post_textSize {
+  width: 920px;
+  height: 48px;
+}
+.post_monToFri {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+  text-align: left;
+  color: #4a4a4a;
+}
+
+.css-3dzjca-MuiPaper-root-MuiPopover-paper-MuiMenu-paper {
+  transform-origin: 0px 71.2px !important;
+  width: max-content;
+  border-radius: 0 0 8px 8px !important;
+  position: relative !important;
+}
+
+.css-117w1su-MuiStepIcon-text {
+  fill: #f1f1f1 !important;
+}
+
+.css-1u4zpwo-MuiSvgIcon-root-MuiStepIcon-root.Mui-completed {
+  color: #07c271 !important;
+  border: 1px solid #07c271 !important;
+}
+
+.extra-class {
+  color: #ffffff;
+}
+.post_logoHead {
+  /* margin-left: 20px; */
+}
+.post_preSkills {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.css-zpcwqm-MuiStepConnector-root {
+  top: 15px !important;
+  left: calc(-45% + 12px) !important;
+  right: calc(55% + 12px) !important;
+  border-width: 1px !important;
+  border-color: #2196f3 !important;
+  border-style: solid !important;
+}
+.post_aboutPart {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+  padding-bottom: 24px;
+}
+.post_flexloc {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  flex-direction: column;
+}
+.post_locSub {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.post_aboutPad {
+  padding-bottom: 32px;
+}
+.post_abtPad {
+  padding-bottom: 16px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  text-align: left;
+  color: #8b8b8b;
+}
+.p-togglebutton.p-button {
+  color: #8b8b8b;
+  font-size: 12px !important;
+  border-radius: 10px;
+  padding: 5px 15px;
+  gap: 4px;
+  border: 1px solid #bbb9b9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  padding: 6px 8px;
+}
+
+.post_temporary {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+  text-align: left;
+  color: #8b8b8b;
+}
+.p-inputtext:enabled:focus {
+  box-shadow: none !important;
+}
+
+.css-ffg8md-MuiNativeSelect-select-MuiInputBase-input-MuiOutlinedInput-
+  .css-ffg8md-MuiNativeSelect-select-MuiInputBase-input-MuiOutlinedInput-input
+  .css-ffg8md-MuiNativeSelect-select-MuiInputBase-input-MuiOutlinedInput-input {
+  padding-right: 32px;
+  width: 326px;
+  color: #2196f3;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  text-align: left;
+}
+.css-1g12qau-MuiSvgIcon-root-MuiNativeSelect-icon {
+  color: #2196f3 !important;
+}
+
+.post_monPad {
+  padding-bottom: 16px;
+}
+.css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root {
+  padding: 0 !important;
+  color: #cccccc !important;
+}
+
+span.p-button-label {
+  font-weight: 400;
+}
+.post_canReqExp {
+  display: flex;
+  align-content: center;
+  flex-direction: row;
+}
+
+.post_CanPlaceholder {
+  font-size: 12px;
+  color: #bbb9b9;
+  font-weight: 400;
+  width: 185px;
+  height: 42px;
+  border-radius: 10px;
+}
+.post_canPara {
+  font-size: 14px;
+  color: #bbb9b9;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pi {
+  font-size: 12px !important;
+}
+.pi:hover {
+  color: #2196f3 !important;
+}
+.post_canlan {
+  display: flex;
+  flex-direction: column;
+}
+.post_CanLanPara {
+  font-size: 14px;
+  color: #68bcff;
+  border-bottom: 1px solid #68bcff;
+  width: 61px;
+  margin-bottom: 16px;
+  padding-bottom: 3px;
+}
+.post_CanLanStatus {
+  display: flex;
+  flex-direction: column;
+}
+.post_sts {
+  width: 40px;
+}
+.post_CanLvl {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+.post_Canlevel {
+  margin-right: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.post_lanPad {
+  justify-content: space-between;
+  width: 100%;
+}
+.css-qfz70r-MuiFormGroup-root {
+  gap: 42px !important  ;
+}
+.css-j204z7-MuiFormControlLabel-root {
+  margin: 0 !important;
+  gap: 10px !important;
+}
+.css-1hbvpl3-MuiSvgIcon-root {
+  width: 24px !important;
+  height: 24px !important;
+  color: #cccccc !important;
+}
+.css-1hbvpl3-MuiSvgIcon-root:hover {
+  color: #68bcff !important;
+}
+.css-j204z7-MuiFormControlLabel-root .MuiFormControlLabel-label {
+  font-size: 16px !important;
+  font-weight: 500 !important;
+  line-height: 20px !important;
+  letter-spacing: 0.25px !important;
+  text-align: left !important;
+  color: #8b8b8b !important;
+}
+.css-vqmohf-MuiButtonBase-root-MuiRadio-root.Mui-checked {
+  color: #2196f3 !important;
+  stroke: #68bcff !important;
+}
+
+.post_yesNo {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 91%;
+  gap: 16px;
+}
+.post_cancheck {
+  width: 32px;
+  height: 32px;
+}
+.post_canUpd {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  text-align: left;
+  color: #4a4a4a;
+}
+.css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root .Mui-checked,
+.css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root .MuiCheckbox-indeterminate {
+  background-color: #eff5fc !important;
+  color: #2196f3 !important;
+  border: #68bcff;
+}
+
+.css-6hp17o-MuiList-root-MuiMenu-list {
+  padding: 8px 15px !important;
+  background-color: #fff !important;
+  border: 1px solid #e6e6e6 !important;
+}
+
+.post_tickIcon {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 24px;
+}
+.confirm-job {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.24);
+  width: 1000px;
+  height: 430px;
+  padding: 32px;
+  border: 1px solid #e6e6e6;
+}
+.post_cfmClose {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: 32px;
+}
+.post_cfmIcon {
+  width: 32px;
+  height: 32px;
+}
+.post_cfmBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 64px;
+}
+.post_subCont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.cfm_contMain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.cfm_para {
+  font-size: 28px;
+  font-weight: 600 !important;
+  color: #4a4a4a !important;
+  padding-bottom: 8px !important;
+  line-height: 40px !important;
+}
+.cfm_paraLive {
+  font-size: 20px !important;
+  font-weight: 500 !important;
+  line-height: 24px !important;
+  text-align: left !important;
+  padding-bottom: 30px !important;
+  color: #4a4a4a !important;
+}
+.post_editBtn {
+  font-size: 12px !important;
+  font-weight: 400 !important;
+  line-height: 24px !important;
+  text-align: left !important;
+  border-radius: 10px !important;
+  padding: 8px 16px !important;
+  background-color: #2196f3 !important;
+  color: #ffffff !important;
+}
+
+.post_jobsBtn {
+  color: #8b8b8b !important;
+  background-color: #ffffff !important;
+}
+.post_textArea {
+  position: relative;
+  width: 920px;
+  height: 67px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+}
+input::placeholder,
+textarea::placeholder {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  color: #bbb9b9;
+}
+
+.post_uploadIcon {
+  position: absolute;
+  right: 24px;
+  top: 24px;
+  width: 18px;
+}
+.post_updLogo {
+  right: 24px;
+  top: 14px;
+}
+.css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.Mui-checked,
+.css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root .MuiCheckbox-indeterminate {
+  color: #eff5fc !important;
+  stroke: #68bcff !important;
+}
+.css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root {
+  color: #2196f3 !important;
+}
+.css-i4bv87-MuiSvgIcon-root {
+  width: 24px !important;
+  height: 24px !important;
+}
+.post_addEmail {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  color: #2196f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.post_addIcon {
+  width: 18px;
+}
+.post_box {
+  padding-bottom: 24px;
+}
+.post_lvl {
+  color: #8b8b8b;
+}
+
+.post_expand {
+  color: #2196f3;
+  width: 22px;
+  height: 22px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.post_formcontrol {
+  margin: 10px;
+  min-width: 200px;
+}
+.post_keyCont {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.post_head3 {
+  font-size: 12px;
+  color: #2196f3;
+}
+.post_add {
+  width: 20px;
+  height: 20px;
+}
+.post_excel {
+  position: relative;
+  display: inline-block;
+}
+.postEG {
+  /* width: 220px; */
+  height: 42px;
+  padding: 0 10px;
+  font-size: 14px;
+  border: 1px solid #2196f3;
+  border-radius: 5px;
+}
+.post_ms {
+  position: absolute;
+  top: 50%;
+  right: 40px;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+}
+.post_addicon {
+  margin-right: 5px;
+}
+.postAdd {
+  font-size: 14px;
+  color: #8b8b8b;
+}
+
+.post_landmark {
+  width: 920px;
+  height: 85px;
+}
+.css-byenzh-MuiButtonBase-root-MuiSwitch-switchBase {
+  top: 6px !important;
+  left: 4px !important;
+}
+.css-byenzh-MuiButtonBase-root-MuiSwitch-switchBase.Mui-checked {
+  color: #2196f3 !important;
+}
+
+.css-1e6y48t-MuiButtonBase-root-MuiButton-root {
+  width: -webkit-fill-available !important;
+}
+
+/* MEDIA QUERY */
+
+@media (max-width: 300px) {
+  .desktop-only {
+    display: none;
+  }
+  .mobile-only {
+    display: block;
+  }
+}
+
+@media (min-width: 301px) and (max-width: 480px) {
+  .desktop-only {
+    display: none;
+  }
+  .mobile-only {
+    display: block;
+  }
+  .switchcontainer1 {
+    padding: 15px;
+    align-items: flex-start;
+    gap: 6px;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .post_stepper {
+    margin: 0;
+  }
+  .css-1hv8oq8-MuiStepLabel-label.MuiStepLabel-alternativeLabel {
+    font-size: 12px !important;
+    white-space: nowrap;
+  }
+  .css-zpcwqm-MuiStepConnector-root {
+    display: none !important;
+  }
+  .post_stepForm {
+    margin: 0 12px;
+  }
+  .post_stepCard {
+    padding: 20px;
+  }
+  .post_aboutthepost {
+    font-size: 16px;
+    padding-bottom: 18px;
+  }
+  .post_aboutHeading {
+    font-size: 12px;
+    padding-bottom: 12px;
+  }
+
+  .post_textSize {
+    width: -webkit-fill-available;
+    height: 48px;
+  }
+  .post_aboutPad {
+    padding-bottom: 24px;
+    /* flex-direction: column !important; */
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+    gap: 10px !important;
+    flex-wrap: wrap;
+  }
+
+  .post_abtPad {
+    flex-direction: row;
+    align-items: center;
+  }
+  .custom-textarea {
+    width: -webkit-fill-available;
+  }
+  .input-with-placeholder {
+    width: unset;
+  }
+  .post_iframe {
+    width: -webkit-fill-available;
+    height: unset;
+  }
+  .custom-textarea-container {
+    width: unset;
+  }
+  .headerJobPost {
+    margin: 15px !important;
+    padding: 8px;
+    height: auto;
+  }
+  .post_bactBtn {
+    padding: 0 15px;
+  }
+  .post_kLogo {
+    width: 50px;
+    height: 50px;
+  }
+  .job_seekpost {
+    padding: 6px;
+    font-size: 10px;
+  }
+  .switchcontainer1mini {
+    gap: 0;
+  }
+  .post_breadcrums {
+    font-size: 10px;
+  }
+  .css-1u4zpwo-MuiSvgIcon-root-MuiStepIcon-root {
+    width: 24px !important;
+    height: 24px !important;
+  }
+  .css-sghohy-MuiButtonBase-root-MuiButton-root {
+    padding: 6px !important;
+    font-size: 10px !important;
+  }
+  .css-i4bv87-MuiSvgIcon-root {
+    width: 24px !important;
+    height: 24px !important;
+  }
+  .post_aboutPart {
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+  .css-j204z7-MuiFormControlLabel-root {
+    gap: 0;
+  }
+
+  .css-10mg1vw-MuiStepper-root {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  .post_CanLvl {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .p-togglebutton.p-button {
+    font-size: 10px !important;
+    white-space: nowrap !important;
+  }
+  .post_head3 {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .post_canUpd {
+    font-size: 10px;
+  }
+  .post_landmark,
+  .post_textArea {
+    width: -webkit-fill-available;
+  }
+  .post_uploadIcon {
+    right: 14px;
+    top: 19px;
+    width: 12px;
+  }
+  .confirm-job {
+    width: auto;
+    height: auto;
+    padding: 20px;
+  }
+  .post_tickIcon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 12px;
+  }
+  .post_cfmClose {
+    padding-bottom: 24px;
+  }
+  .cfm_para {
+    font-size: 15px !important;
+    white-space: nowrap !important;
+    line-height: 24px !important;
+  }
+  .cfm_paraLive {
+    font-size: 15px !important;
+    padding-bottom: 24px !important;
+  }
+  .post_editBtn {
+    font-size: 10px !important;
+    line-height: 20px !important;
+    text-align: left !important;
+    padding: 8px !important;
+  }
+  .post_yesNo {
+    width: auto;
+  }
+
+  .Main-job-card-container {
+    width: min-content;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .desktop-only {
+    display: none;
+  }
+  .mobile-only {
+    display: block;
+  }
+  .headerJobPost {
+    display: none;
+  }
+  .switchcontainer1 {
+    padding: 0 20px;
+    margin: 0;
+  }
+  .post_stepper {
+    padding: 0 20px 66px 20px;
+    margin: 0;
+  }
+  .post_stepForm {
+    padding: 0;
+    margin: 0;
+  }
+  .post_stepCard {
+    padding: 42px;
+  }
+  .post_textSize,
+  .input-with-placeholder,
+  .clickbar2Industry {
+    width: -webkit-fill-available;
+    height: auto;
+  }
+
+  .post_iframe {
+    width: -webkit-fill-available;
+  }
+  .custom-textarea-container {
+    width: auto;
+  }
+  .css-julti5-MuiSwitch-root {
+    width: 60px !important;
+    height: 40px !important;
+  }
+  .css-byenzh-MuiButtonBase-root-MuiSwitch-switchBase {
+    top: 5px !important;
+    left: 5px !important;
+  }
+  .css-1u4zpwo-MuiSvgIcon-root-MuiStepIcon-root {
+    width: 25px !important;
+    height: 25px !important;
+  }
+  .css-1hv8oq8-MuiStepLabel-label.MuiStepLabel-alternativeLabel {
+    font-size: 14px !important;
+  }
+  .css-jsexje-MuiSwitch-thumb {
+    width: 10px !important;
+    height: 10px !important;
+  }
+  .post_aboutthepost {
+    font-size: 16px;
+  }
+  .post_aboutHeading {
+    font-size: 14px;
+  }
+  .clickbar2Industry {
+    font-size: 12px !important;
+  }
+  .post_temporary {
+    font-size: 12px;
+  }
+  .post_bactBtn {
+    padding: 0;
+  }
+  .post_preSkills {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .post_lanPad {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .post_aboutPart {
+    flex-wrap: wrap;
+  }
+  .post_landmark {
+    width: -webkit-fill-available;
+    height: 85px;
+  }
+
+  .post_textSize .p-inputtext .p-component {
+    width: 645px;
+    height: auto;
+  }
+  .post_cfmBtn {
+    padding-bottom: 24px;
+  }
+  .post_textArea {
+    width: 645px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 960px) {
+  .desktop-only {
+    display: none;
+  }
+  .mobile-only {
+    display: block;
+  }
+}
+
+@media (min-width: 961px) {
+  .desktop-only {
+    display: block;
+  }
+  .mobile-only {
+    display: none;
+  }
+}

@@ -1,0 +1,312 @@
+.viewCont.pst_contDashborad {
+  justify-content: flex-end;
+}
+.view_size {
+  width: 100%;
+}
+.viewId {
+  border-radius: 6px;
+  padding: 2px 4px;
+  background-color: #e9f5ff;
+}
+.vId {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16.8px;
+  color: #8b8b8b;
+}
+.vIdNo {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16.8px;
+  color: #2196f3;
+}
+
+.viewContParent .act_CardSub {
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 8px;
+  padding: 12px 6px;
+}
+.viewCont .act_contInner {
+  width: -webkit-fill-available;
+}
+.viewPart1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 16px;
+}
+.viewCount {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 38.4px;
+  text-align: left;
+  color: #9554ff;
+}
+.viewApply {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.2px;
+  text-align: left;
+  color: #8b8b8b;
+}
+.viewShorted {
+  color: #07c271;
+}
+.viewHold {
+  color: #2196f3;
+}
+.viewPost {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16.8px;
+  text-align: left;
+  color: #b5b5b5;
+}
+.viewDate {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.2px;
+  text-align: left;
+  color: #4a4a4a;
+}
+.view_subParent .act_contContent {
+  padding-bottom: 8px;
+}
+
+.viewCont .act_part1 {
+  padding-bottom: 12px;
+}
+.viewSubPart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+}
+.viewBorder {
+  border-left: 0.6px solid #e6e6e6;
+  padding-left: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 8px;
+}
+.viewDateGap {
+  align-items: flex-start;
+  gap: 0;
+}
+.viewPostedOn {
+  padding-bottom: 4px;
+  border-bottom: 0.6px solid #e6e6e6;
+  margin-bottom: 4px;
+}
+.viewCont .react-datepicker {
+  top: 40px !important;
+  right: -4px !important;
+}
+
+.view_inner .act_imgContent {
+  top: 77px;
+  left: 47px;
+  padding: 4px;
+}
+
+.view_inner .olive {
+  background-color: #c8f4e1;
+  color: #0bab66;
+}
+.view_inner .mildRed {
+  background-color: #ffefe8;
+  color: #ff763c;
+}
+.view_inner .mildYellow {
+  background-color: #faf6cd;
+  color: #ebab05;
+}
+
+.viewContParent .view_cardHead {
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  color: #4a4a4a !important;
+}
+.view_pending {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  color: #ff3b3c;
+}
+.view_contPending {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.view_subParent {
+  width: 235px;
+}
+
+.view_cmp {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 12px;
+  color: #4a4a4a;
+  padding-bottom: 8px;
+}
+
+.view_subParent .view_dsg {
+  color: #2824df;
+}
+.view_subParent {
+  width: 234px;
+}
+.viewContParent {
+  padding-bottom: 8px;
+}
+.viewContParent .view_part2 {
+  padding-bottom: 8px;
+}
+.viewParent {
+  width: 400px;
+}
+.view_subParent .act_part4 {
+  border-bottom: none;
+  padding-bottom: 8px;
+  margin: 0;
+}
+.view_subParent .view_part4Gap {
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+  border-bottom: 1px solid #e6d6d6;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root {
+  min-height: 0 !important;
+  font-size: 12px !important;
+}
+
+.css-1i0e6f3-MuiModal-root-MuiPopover-root {
+  position: unset !important;
+}
+
+.css-1hmp2mw-MuiPaper-root-MuiPopover-paper {
+  top: 681px !important;
+  left: 468px !important;
+  position: absolute !important;
+}
+
+.css-1n1fst8-MuiPaper-root-MuiPopover-paper {
+  bottom: -34px !important;
+  left: 468px !important;
+}
+
+.view_review {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+}
+
+.red {
+  color: #ff3b3c;
+}
+.lightGreen {
+  color: #17a2b8;
+}
+.shortList {
+  color: #17a2b8;
+}
+.holdYellow {
+  color: #eec006;
+}
+.interviewPurple {
+  color: #9554ff;
+}
+.hiredGreen {
+  color: #07c271;
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .desktop-only {
+    display: none;
+  }
+  .mobile-only {
+    display: block;
+  }
+  /* .active_tabCont {
+    width: 133px !important;
+  } */
+  .activeCont .pst_contDashborad {
+    padding-bottom: 12px;
+  }
+
+  .viewBorder {
+    padding-left: 6px;
+  }
+  .viewSubPart {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .act_catgy {
+    font-size: 11px;
+    white-space: nowrap;
+  }
+  .viewApply {
+    font-size: 12px;
+  }
+  .viewCount {
+    font-size: 24px;
+  }
+  .viewPost {
+    font-size: 10px;
+  }
+  .viewDate {
+    font-size: 13px;
+  }
+  .active_title {
+    font-size: 14px !important;
+    white-space: nowrap !important;
+  }
+
+  .css-heg063-MuiTabs-flexContainer {
+    gap: 0 !important;
+  }
+  .active_appBar {
+    margin-bottom: 0 !important;
+  }
+}
+
+@media (min-width: 301px) and (max-width: 480px) {
+  .desktop-only {
+    display: none;
+  }
+  .mobile-only {
+    display: block;
+  }
+  .headerJobPost {
+    display: none;
+  }
+  .viewSubPart {
+    flex-direction: column;
+  }
+  .viewBorder {
+    border-left: unset;
+    padding-left: 0;
+    padding-bottom: 24px;
+  }
+
+  .viewDateGap {
+    width: -webkit-fill-available;
+  }
+  .viewSubPart {
+    width: unset;
+    align-items: unset;
+  }
+  .view_inner .act_imgContent {
+    top: 81px;
+    left: 90px;
+  }
+}

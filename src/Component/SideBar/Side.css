@@ -1,0 +1,298 @@
+/* Sidebar */
+.Sidebar {
+  top: 0;
+  left: 0;
+  border-radius: 0 10px 10px 0;
+  width: 60px;
+  height: 100vh;
+  position: fixed;
+  z-index: 1;
+  overflow: hidden;
+  background: #1877f2;
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 5px 5px -3px,
+    rgba(0, 0, 0, 0.043) 0px 8px 10px 1px, rgba(0, 0, 0, 0.035) 0px 3px 14px 2px;
+  color: white;
+  transition: width 0.3s ease-in-out;
+}
+
+.Sidebar:hover {
+  width: 250px;
+}
+
+/* Logo */
+.logo {
+  width: 40px;
+  height: 40px;
+  background: white;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+/* Icons */
+.icon {
+  font-size: 20px;
+}
+
+.ts-icons {
+  font-size: 20px;
+  margin-left: 15px;
+  display: none;
+}
+
+.ts-icon {
+  margin: 0px 5px;
+}
+
+/* Text */
+.cate-text {
+  display: none;
+}
+
+/* Additional Content */
+.open-caret,
+.cate-text,
+.ts-icons {
+  display: none;
+}
+
+.Sidebar:hover .open-caret,
+.Sidebar:hover .cate-text,
+.Sidebar:hover .ts-icons {
+  display: block;
+}
+
+/* Categories */
+.category-type:hover {
+  background-color: #68bcff;
+}
+
+/* Side.css */
+
+.side {
+  height: 100%;
+}
+
+.topside {
+  border-radius: 8px;
+}
+
+.logo {
+  width: 40px;
+  height: auto;
+}
+
+.ts-icons {
+  display: flex;
+  align-items: center;
+}
+
+.ts-icon {
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.terms {
+  padding: 10px 0;
+}
+
+.category {
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.category:hover {
+  background-color: #495057;
+}
+
+.category-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+}
+
+.cate-text {
+  margin: 0;
+}
+
+.topnav_logo {
+  display: flex;
+  align-items: center;
+}
+
+.menu-link {
+  font-size: 14px;
+  display: block;
+  padding: 0 8px 8px 0;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  font-weight: 500;
+}
+
+.menu-link:hover {
+  background-color: #495057;
+}
+
+/* Top Navigation Bar */
+.TopNavBar {
+  /* display: none;s */
+  flex-direction: column;
+  background-color: #2196f3;
+  color: #fff;
+  border-radius: 0 0 4px 4px;
+}
+
+.top-nav-bar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px;
+}
+
+.menu-icon {
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.additional-content {
+  display: flex;
+  flex-direction: column;
+  padding: 0 30px 24px;
+  gap: 20px;
+}
+
+.topnav_logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.topnav_logo .ts-icon {
+  color: #fff;
+  font-size: 20px;
+}
+
+.css-1e6y48t-MuiButtonBase-root-MuiButton-root {
+  background-color: #ffffff !important;
+  gap: 6px !important;
+}
+
+.TopNavBar .clickbar4 {
+  background-color: #fff;
+  color: #8d8d8d;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* Media Queries */
+@media (min-width: 481px) and (max-width: 768px) {
+  .TopNavBar {
+    display: flex;
+    margin-bottom: 24px;
+  }
+
+  .desktop-only {
+    display: none;
+  }
+  .mobile-only {
+    display: block;
+  }
+  .switchcontainer {
+    padding: 0 30px 24px;
+    /* flex-direction: column; */
+  }
+  .switch_main {
+    flex-direction: row;
+  }
+  .jobLst_category {
+    padding: 0 0 24px 30px;
+  }
+  .container {
+    padding: 0;
+    margin: 0 0 24px 30px;
+  }
+  .TopNavBar .clickbar4 {
+    background-color: #EFF5FC;
+    color: #8d8d8d;
+    font-size: 14px;
+    font-weight: 400;
+    width: -webkit-fill-available;
+    padding: 10px;
+    border: 2px solid #68BCFF;
+}
+.job_seekpost{
+  width: 50%;
+}
+.clickbar4:hover{
+  background-color:#EFF5FC;
+  border: 1px solid #68BCFF;
+}
+}
+
+
+
+
+@media (max-width: 425px) {
+  .TopNavBar {
+    display: flex;
+  }
+
+  .desktop-only {
+    display: none;
+  }
+  .mobile-only {
+    display: block;
+  }
+
+  .topnav_logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+}
+
+@media (max-width: 375px) {
+  .TopNavBar {
+    display: flex;
+  }
+
+  .desktop-only {
+    display: none;
+  }
+  .mobile-only {
+    display: block;
+  }
+
+  .topnav_logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+}
+
+@media (max-width: 301px) {
+  .TopNavBar {
+    display: flex;
+  }
+
+  .desktop-only {
+    display: none;
+  }
+  .mobile-only {
+    display: block;
+  }
+
+  .topnav_logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+}
